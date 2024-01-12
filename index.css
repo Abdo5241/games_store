@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    --sb-track-color: #2a2a2a;
+    --sb-thumb-color: #EF6838;
+    --sb-size: 6px;
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+}
+
+p.hidden {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@layer components {
+    .side_nav {
+        @apply left-0 top-0 h-full w-[200px] bg-white p-[10px]
+    }
+}
+
+
+@layer components {
+    .hover-links {
+        @apply duration-[450ms] hover:text-[#ff6b27] flex gap-4 items-center
+    }
+}
+
+@layer components {
+    .hover-links2 {
+        @apply w-max transition-all ease-in-out duration-[300ms] hover:bg-[#b0613d] rounded-md flex gap-3 items-center py-2
+    }
+}
+
+
+@layer components {
+    .slide_img_top {
+        @apply rounded-lg object-contain hover:contrast-[0.8] duration-[340ms]
+    }
+}
+
+@layer components {
+    .slide_arrow {
+        @apply w-8 h-8 p-1 rounded-full text-white hover:bg-[#ff6b27] transition-all ease-in-out duration-500
+    }
+}
+
+@layer components {
+    .slide_text {
+        @apply flex items-center space-x-2
+    }
+}
+
+@layer components {
+    .Free_Game {
+        @apply rounded-xl object-contain hover:contrast-[0.9] duration-[340ms]
+    }
+}
+
+@layer components {
+    .Free_Game2 {
+        @apply rounded-xl object-contain hover:contrast-[0.8] duration-[340ms]
+    }
+}
+
+@layer components {
+    .hover_TopSellers {
+        @apply duration-[260ms] hover:bg-[#292929] py-2.5 px-3 rounded-xl w-[350px]
+    }
+}
+
+@layer components {
+    .button_all {
+        @apply py-[1.50px] px-[7px] rounded-[4px] text-[12px] bg-[#217fc1]
+    }
+}
+
+@layer components {
+    .price-box {
+        @apply line-through text-[13px] font-extralight
+    }
+}
+
+@layer components {
+    .Name-box {
+        @apply text-[14px] font-semibold tracking-wider
+    }
+}
+
+@layer components {
+    .text-box {
+        @apply text-[14px] text-[#f5f5f599]
+    }
+}
+
+@layer components {
+    .text-free {
+        @apply text-[10px] text-[#a7a7a7d0]
+    }
+}
+
+@layer components {
+    .hover_MostPopular {
+        @apply rounded-lg object-contain hover:contrast-[0.8] duration-[340ms]
+    }
+}
+
+
+@layer components {
+    .sidebar {
+        @apply fixed h-[100vh] w-[90px] bg-[#161616] top-0 left-0 duration-500 z-[99]
+    }
+}
+
+.sidebar {
+    padding: 6px 14px;
+}
+
+.active {
+    width: 240px;
+}
+
+@layer components {
+    .logo {
+        @apply flex h-[50px] w-[100%] text-center opacity-0 pt-5
+    }
+}
+
+.active .logo_content .logo {
+    opacity: 1;
+    pointer-events: none;
+}
+
+@layer components {
+    .btn {
+        @apply absolute left-[50%] top-[25px] h-[50px] w-[50px] text-center leading-[50px] translate-x-[-50%] hover:bg-[#EF6838] rounded-full duration-[700ms]
+    }
+}
+
+.active #btn {
+    left: 90%;
+}
+
+@layer components {
+    .nav_list {
+        @apply mt-5
+    }
+}
+
+@layer components {
+    .links_li_sidebar {
+        @apply relative h-[50px] w-[84%] list-none leading-[50px]
+    }
+}
+
+.links_li_sidebar {
+    margin: 0 5px;
+}
+
+.sidebar .links_name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.active .links_name {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+@layer components {
+    .links_li_a {
+        @apply flex items-center text-white hover:bg-[#EF6838] duration-[400ms] rounded-lg whitespace-nowrap
+    }
+}
+
+.sidebar ul li a svg {
+    /* height: 50px; */
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+@layer components {
+    .tooltip {
+        @apply absolute h-[35px] w-[100px] bg-[#222222] left-[122px] top-[0] rounded-md leading-[35px] text-center text-white duration-[0sm] opacity-0 pointer-events-none
+    }
+}
+
+.sidebar ul li .tooltip {
+    box-shadow: -5px 5px 5px #bf6b4c;
+    display: block;
+    transform: translate(-50%, -50%);
+}
+
+.active ul li .tooltip {
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip {
+    transition: all 0.7s ease;
+    top: 50%;
+    opacity: 1;
+
+}
