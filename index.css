@@ -85,7 +85,9 @@ html {
     padding-left: 30px;
 }
 
-
+#Slider_top_container .active {
+    background-color: #ff6b27;
+}
 
 /* end Slider top container */
 
