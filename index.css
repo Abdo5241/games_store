@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+
+
 body {
     --sb-track-color: #2a2a2a;
     --sb-thumb-color: #EF6838;
@@ -31,6 +33,7 @@ p.hidden {
 html {
     scroll-behavior: smooth;
 }
+
 
 @layer components {
     .side_nav {
@@ -69,6 +72,22 @@ html {
         @apply flex items-center space-x-2
     }
 }
+
+/* Slider top container */
+
+#Slider_top_container img {
+    position: relative;
+}
+
+#Slider_top_container p {
+    position: absolute;
+    color: white;
+    padding-left: 30px;
+}
+
+
+
+/* end Slider top container */
 
 @layer components {
     .Free_Game {
@@ -124,7 +143,7 @@ html {
     }
 }
 
-
+/* sidebar */
 @layer components {
     .sidebar {
         @apply fixed h-[100vh] w-[90px] bg-[#161616] top-0 left-0 duration-500 z-[99]
@@ -162,7 +181,7 @@ html {
 
 @layer components {
     .nav_list {
-        @apply mt-5
+        @apply mt-8 space-y-4
     }
 }
 
@@ -208,7 +227,7 @@ html {
 }
 
 .sidebar ul li .tooltip {
-    box-shadow: -5px 5px 5px #bf6b4c;
+    box-shadow: 6px 3.5px 4.80px #bf6b4c;
     display: block;
     transform: translate(-50%, -50%);
 }
@@ -218,8 +237,10 @@ html {
 }
 
 .sidebar ul li:hover .tooltip {
-    transition: all 0.7s ease;
+    transition: all 0.6s ease;
     top: 50%;
     opacity: 1;
 
 }
+
+/* end sidebar */
