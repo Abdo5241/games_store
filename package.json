@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "axios": "^1.6.5",
     "swiffy-slider": "^1.6.0",
     "swiper": "^11.0.5",
     "wowjs": "^1.1.3"
