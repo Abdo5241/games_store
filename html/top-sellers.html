@@ -1,19 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://vjs.zencdn.net/8.9.0/video-js.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./hint.css">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="/index.css">
 
-    <title>Alan Wake 2</title>
 </head>
 
-<body class="bg-[#121212] overflow-x-hidden ">
-
-    <div class="w-full h-full">
-
+<body class="bg-[#131313] overflow-x-hidden relative h-[10000px] " onclick="closeSideBar(event)">
+    <!-- container -->
+    <div class="w-full h-full ">
+        <!-- side nav -->
         <div class="sidebar">
             <div class="logo_content ">
                 <div class="logo">
@@ -25,13 +26,12 @@
                     <div class="logo_name text-white text-xl">MAN 4 </div>
                 </div>
                 <div id="btn-arrow">
-                    <svg id="btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="btn text-white w-8 h-8 p-1">
+                    <svg id="btn" onclick="toggleSidebar(event)" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn text-white w-8 h-8 p-1">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                 </div>
-
                 <div class="">
                     <ul class="nav_list">
                         <!-- home -->
@@ -49,15 +49,16 @@
                         <!-- end home -->
                         <!-- My Games -->
                         <li class="links_li_sidebar ">
-                            <a class="links_li_a" href="#">
+                            <a class="links_li_a" href="index.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3" />
+                                        d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" />
                                 </svg>
-                                <span class="links_name text-white">My Games</span>
+
+                                <span class="links_name text-white">Store</span>
                             </a>
-                            <span class="tooltip">My Games</span>
+                            <span class="tooltip">Store</span>
                         </li>
                         <!-- end My Games -->
                         <!-- Cart -->
@@ -101,7 +102,7 @@
                             <span class="tooltip">Friends</span>
                         </li>
                         <!-- end Friends -->
-                        <div class="pt-56">
+                        <div class="pt-36">
                             <!-- Dark Mod -->
                             <li class="links_li_sidebar ">
                                 <a class="links_li_a" href="#">
@@ -151,6 +152,8 @@
                 </div>
             </div>
         </div>
+        <!-- end side nav -->
+        <!-- body -->
         <!-- Header -->
         <div class="px-4 py-4 w-full flex items-center justify-between ">
             <div class="pl-48 flex items-center">
@@ -192,122 +195,26 @@
                 <!-- END User -->
             </div>
         </div>
+
         <!-- End Header -->
-
         <div class="w-full mx-auto lg:max-w-[1120px]">
-
-            <div class=" text-white">
-                <div>
-                    <h1 class="text-2xl">Cyberpunk 2077</h1>
+            <!-- Top Sellers -->
+            <div id="Top Sellers" class="">
+                <div class="text-white">
+                    <h1 class="pb-10" style="font-size: 35px;">Top Sellers</h1>
                 </div>
-                <div class="flex items-center pt-16">
-                    <!-- star -->
-                    <div class=" flex items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] svg css-uwwqev"
-                                viewBox="0 0 36 34">
-                                <path
-                                    d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </span>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] svg css-uwwqev"
-                                viewBox="0 0 36 34">
-                                <path
-                                    d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </span>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] svg css-uwwqev"
-                                viewBox="0 0 36 34">
-                                <path
-                                    d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </span>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] svg css-uwwqev"
-                                viewBox="0 0 36 34">
-                                <path
-                                    d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </span>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] svg css-uwwqev"
-                                viewBox="0 0 36 34">
-                                <path
-                                    d="M17.7835 1.05234C17.8961 0.714958 18.3733 0.714958 18.4859 1.05234L22.4334 12.8804C22.4839 13.0316 22.6253 13.1335 22.7846 13.1335H35.5375C35.8985 13.1335 36.0461 13.5975 35.7513 13.806L25.4512 21.0917C25.318 21.1859 25.2622 21.3563 25.3138 21.5112L29.2521 33.3116C29.3654 33.651 28.9792 33.9377 28.6871 33.7311L18.3485 26.4182C18.2204 26.3276 18.049 26.3276 17.9209 26.4182L7.58236 33.7311C7.29026 33.9377 6.90407 33.651 7.01734 33.3116L10.9556 21.5112C11.0073 21.3563 10.9515 21.1859 10.8182 21.0917L0.518159 13.806C0.223381 13.5975 0.370904 13.1335 0.731971 13.1335H13.4848C13.6441 13.1335 13.7856 13.0316 13.836 12.8804L17.7835 1.05234Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </span>
-                        <div class="pl-1.5 ">
-                            <span
-                                class=" bg-[#282727] rounded-md py-[3px] px-[5px] text-[14px] text-slate-300">4.8</span>
-                        </div>
-                    </div>
-                    <!-- end star -->
-                    <div class="flex items-center">
-                        <div class="pl-5 flex items-center">
-                            <span class="pr-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-                                </svg>
-
-                            </span>
-                            <p>Diverse Characters</p>
-                        </div>
-                        <div class="pl-5 flex items-center">
-                            <span class="pr-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
-                                </svg>
-
-                            </span>
-                            <p>
-                                Quickly Understand the Controls</p>
-                        </div>
-                    </div>
+                <div id="top_seller_page" class="">
                 </div>
-                <!-- video -->
-                <div class="">
-                    <video id="my-video" class="ml-48 video-js" controls preload="auto" width="640" height="430"
-                        poster="" data-setup="{}">
-                        <source
-                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/256987121/movie480_vp9.webm?t=1701872779"
-                            type="video/mp4" />
-                        <source
-                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/256987121/movie480_vp9.webm?t=1701872779"
-                            type="video/webm" />
-                        <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a
-                            web browser that
-                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                        </p>
-                    </video>
-                </div>
-                <!-- end video -->
-
             </div>
         </div>
+        <!-- END Top Sellers -->
 
     </div>
-
-
-
-
-
-
-
-
-    <script src="https://vjs.zencdn.net/8.9.0/video.min.js"></script>
-    <script src="./sidebar.js"></script>
+    <!-- End Container -->
+    <!-- Scripts -->
+    <script type="module" src="/components/top-sellers-page.js"></script>
+    <script src="/sidebar.js"></script>
+    <script type="module" src="/animate.js"></script>
 </body>
 
 </html>

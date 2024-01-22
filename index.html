@@ -5,13 +5,14 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./hint.css">
   <title>Game Store</title>
   <link rel="stylesheet" href="/index.css">
 
 </head>
 
-<body class="bg-[#121212] overflow-x-hidden relative h-[10000px] " onclick="closeSideBar(event)">
+<body class="bg-[#131313] overflow-x-hidden relative h-[10000px] " onclick="closeSideBar(event)">
   <!-- container -->
   <div class="w-full h-full ">
     <!-- side nav -->
@@ -32,7 +33,6 @@
               d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
           </svg>
         </div>
-
         <div class="">
           <ul class="nav_list">
             <!-- home -->
@@ -50,21 +50,21 @@
             <!-- end home -->
             <!-- My Games -->
             <li class="links_li_sidebar ">
-              <a class="links_li_a" href="#">
+              <a class="links_li_a" href="index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round"
                     d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" />
                 </svg>
 
-                <span class="links_name text-white">My Games</span>
+                <span class="links_name text-white">Store</span>
               </a>
-              <span class="tooltip">My Games</span>
+              <span class="tooltip">Store</span>
             </li>
             <!-- end My Games -->
             <!-- Cart -->
             <li class="links_li_sidebar ">
-              <a class="links_li_a" href="#">
+              <a class="links_li_a" href="cart/cart.html">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -170,7 +170,7 @@
       </div>
 
       <div class="text-white space-x-4 flex items-center">
-        <a href="./Alan Wake 2.html"> <button
+        <a href="/game-buy/game-buy.html"> <button
             class="bg-[#ff6b27] py-1 px-2 rounded-md transition hover:bg-orange-500 ">Get
             The App</button>
         </a>
@@ -204,20 +204,22 @@
       <div id="Slider_top_container">
         <div
           class="rounded-xl slider-indicators-highlight swiffy-slider slider-item-show2-sm slider-item-ratio slider-item-ratio-21x9 slider-item-snapstart slider-nav-arrow slider-nav-touch slider-nav-autohide slider-nav-page slider-nav-autoplay slider-nav-autopause slider-indicators-outside  slider-nav-animation slider-nav-animation-zoomout slider-item-helper"
-          data-slider-nav-autoplay-interval="5000">
-          <ul class="slider-container rounded-lg">
-            <li class="">
-              <div id="slide1">
+          data-slider-nav-autoplay-interval="50000">
+          <ul class="slider-container rounded-lg ">
+            <li class="relative">
+              <div id="slide1" class="">
+                <div class="overlay"></div>
+
                 <img class="-mt-16" src="./img/img Slider top container/img1.jpg" alt="">
                 <!-- text -->
-                <div class="animate__animated animate__fadeIn absolute pl-[30px] text-white mt-[-380px] w-80">
+                <div class="animate__animated animate__fadeIn absolute pl-[30px] text-white mt-[-380px] w-80 z-20 ">
                   <h1 class="text-[14px] font-sans">EPISODE 08 // ACT I</h1>
                   <h1 class="pt-5 text-[18px] font-sans">Wield the new twin-barrel Outlaw sniper in EPISODE 08 // ACT I.
                   </h1>
                 </div>
                 <!-- end text -->
                 <!-- button -->
-                <div class="absolute pl-[30px] text-white mt-[-230px] w-80 space-y-2">
+                <div class="absolute pl-[30px] text-white mt-[-230px] w-80  space-y-2 z-20">
                   <span class="text-[18px]">Free</span>
                   <div class="flex items-center">
                     <button class="bg-[#ff6b27] rounded-md py-2 px-4 hover:bg-[#c06b44]">Play For Free</button>
@@ -225,19 +227,19 @@
                 </div>
                 <!-- end -->
                 <!-- logo button -->
-                <div id="logo">
-                  <img class="absolute mt-[-500px] w-[130px] pl-[30px]   animate__animated animate__fadeInRight"
+                <div id="logo ">
+                  <img class="z-20 absolute mt-[-500px] w-[130px] pl-[30px]   animate__animated animate__fadeInRight"
                     src="./img/img Slider top container/logo/logo1.jpg" alt="">
                 </div>
                 <!-- end logo -->
-
               </div>
             </li>
-            <li class="">
-              <div id="slide2">
-                <img class="-mt-16" src="./img/img Slider top container/img2.jpg" alt="">
+            <li class="relative">
+              <div id="slide2 ">
+                <div class="overlay"></div>
+                <img class="-mt-16 " src="./img/img Slider top container/img2.jpg" alt="">
                 <!-- text -->
-                <div class="animate__animated animate__fadeIn absolute pl-[30px] text-white mt-[-400px] w-80">
+                <div class=" animate__animated animate__fadeIn absolute pl-[30px] text-white mt-[-400px] w-80 z-20">
                   <h1 class="text-[14px] font-sans">Now Available</h1>
                   <h1 class="pt-5 text-[18px] font-sans">Discover what it means to become Na’vi. Join other clans to
                     protect Pandora from the formidable forces of the RDA.
@@ -245,7 +247,7 @@
                 </div>
                 <!-- end text -->
                 <!-- button -->
-                <div class="absolute pl-[30px] text-white mt-[-230px] w-96 space-y-2">
+                <div class="absolute pl-[30px] z-20 text-white mt-[-230px] w-96 space-y-2">
                   <span class="font-medium">Startin at $69.99</span>
                   <div class="flex items-center">
                     <button class="bg-[#ff6b27] rounded-md py-2 px-4 hover:bg-[#c06b44]">BUY NOW</button>
@@ -263,17 +265,18 @@
                 <!-- end -->
                 <!-- logo -->
                 <div class="">
-                  <img class="absolute mt-[-480px] w-[230px] ml-[22px] animate__animated animate__fadeInRight"
+                  <img class="absolute z-20 mt-[-480px] w-[230px] ml-[22px] animate__animated animate__fadeInRight"
                     src="./img/img Slider top container/logo/logo2.png" alt="">
                 </div>
                 <!-- end logo -->
               </div>
             </li>
-            <li class="slide-visible">
+            <li class="relative slide-visible">
               <div id="slide3">
+                <div class="overlay"></div>
                 <img class="-mt-10" src="./img/img Slider top container/img3.jpg" alt="">
                 <!-- text -->
-                <div class="absolute pl-[30px] text-white mt-[-390px] w-80">
+                <div class="absolute pl-[30px] text-white mt-[-390px] w-80 z-20">
                   <h1 class="font-normal text-[17px]">Available March 8, 2024</h1>
                   <h1 class="pt-5 text-[18px] font-sans">Tactical, beautiful, and wholly unique, the GOTY-winning sci-fi
                     RTS returns with Homeworld 3.
@@ -281,7 +284,7 @@
                 </div>
                 <!-- end text -->
                 <!-- button -->
-                <div class="absolute pl-[30px] text-white mt-[-250px] w-96 space-y-2">
+                <div class="absolute z-20 pl-[30px] text-white mt-[-250px] w-96 space-y-2">
                   <span class="font-medium">Startin at $39.99</span>
                   <div class="flex items-center">
                     <button class="bg-[#ff6b27] rounded-md py-2 px-4 hover:bg-[#c06b44]">Play For Free</button>
@@ -299,17 +302,18 @@
                 <!-- end -->
                 <!-- logo -->
                 <div class="">
-                  <img class="absolute mt-[-520px] w-[200px]  ml-[30px] animate__animated animate__fadeInRight"
+                  <img class="absolute z-20 mt-[-520px] w-[200px]  ml-[30px] animate__animated animate__fadeInRight"
                     src="./img/img Slider top container/logo/logo3.png" alt="">
                 </div>
                 <!-- end logo -->
               </div>
             </li>
-            <li class="">
-              <div id="slide4 ">
-                <img class="-mt-16" src="./img/img Slider top container/img4.jpg" alt="">
+            <li class="relative">
+              <div id="slide4  ">
+                <div class="overlay"></div>
+                <img class="-mt-16 " src="./img/img Slider top container/img4.jpg" alt="">
                 <!-- text -->
-                <div class="absolute pl-[30px] text-white mt-[-380px] w-80">
+                <div class="absolute pl-[30px] text-white mt-[-380px] w-80 z-20">
                   <h1 class="text-[14px] font-sans">Last Chance to Pre-Purchase</h1>
                   <h1 class="pt-5 text-[18px] font-sans">Pre-purchase Deluxe Edition to get bonus content and up to
                     three days of early access.
@@ -317,35 +321,35 @@
                 </div>
                 <!-- end text -->
                 <!-- button -->
-                <div class="absolute pl-[30px] text-white mt-[-230px] w-96 space-y-2">
+                <div class="absolute z-20 pl-[30px] text-white mt-[-230px] w-96 space-y-2">
                   <span class="font-medium">Startin at $59.99</span>
-                  <div class="flex items-center">
+                  <div class="flex items-center ">
                     <button class="bg-[#ff6b27] rounded-md py-2 px-4 hover:bg-[#c06b44]">Play For Free</button>
                     <span class="pl-16">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-7 h-7">
+                        stroke="currentColor" class="w-7 h-7  ">
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                       </svg>
                     </span>
-                    <span class="text-[12px] pl-2">ADD TO CART</span>
+                    <span class="text-[12px] pl-2   ">ADD TO CART</span>
                   </div>
 
                 </div>
                 <!-- end -->
                 <!-- logo -->
                 <div class="">
-                  <img class="absolute mt-[-480px] w-[200px] ml-[30px] animate__animated animate__fadeInRight"
+                  <img class="absolute z-20 mt-[-480px] w-[200px] ml-[30px] animate__animated animate__fadeInRight"
                     src="./img/img Slider top container/logo/logo4.png" alt="">
                 </div>
                 <!-- end logo -->
               </div>
             </li>
-            <li class="">
-              <div id="slide5">
-                <img class="-mt-16" src="./img/img Slider top container/img5.jpg" alt="">
+            <li class="relative">
+              <div id="slide5 ">
+                <img class="-mt-16 " src="./img/img Slider top container/img5.jpg" alt="">
                 <!-- text -->
-                <div class="absolute pl-[30px] text-white mt-[-380px] w-80">
+                <div class=" absolute pl-[30px] text-white mt-[-380px] w-80 z-20">
                   <h1 class="text-[14px] font-sans">Coming February 16</h1>
                   <h1 class="pt-5 text-[18px] font-sans">Pre-purchase Premium Edition and play up to three days early,
                     plus get the Highness of the High Seas Pack.
@@ -377,11 +381,12 @@
                 <!-- end logo -->
               </div>
             </li>
-            <li class="">
+            <li class="relative">
               <div id="slide6">
+                <div class="overlay"></div>
                 <img class="-mt-28" src="./img/img Slider top container/img6.jpg" alt="">
                 <!-- text -->
-                <div class="absolute pl-[30px] text-white mt-[-420px] w-96">
+                <div class="absolute pl-[30px] text-white mt-[-420px] w-96 z-20">
                   <h1 class="text-[14px] font-sans">EPISODE 08 // ACT I</h1>
                   <h1 class="pt-5 text-[18px] font-sans">You are Star-Lord. The fate of the galaxy and the Guardians is
                     in your hands. Time to show the universe what you’re made of. You got this. Probably.
@@ -389,7 +394,7 @@
                 </div>
                 <!-- end text -->
                 <!-- button -->
-                <div class="absolute pl-[30px] text-white mt-[-250px] w-96 space-y-2">
+                <div class="absolute z-20 pl-[30px] text-white mt-[-250px] w-96 space-y-2">
                   <span class="font-medium">Startin at $59.99</span>
                   <div class="flex items-center">
                     <button class="bg-[#ff6b27] rounded-md py-2 px-4 hover:bg-[#c06b44]">Play For Free</button>
@@ -407,7 +412,7 @@
                 <!-- end -->
                 <!-- logo -->
                 <div class="">
-                  <img class="absolute mt-[-500px] w-[150px] ml-[30px] animate__animated animate__fadeInRight"
+                  <img class="absolute z-20 mt-[-500px] w-[150px] ml-[30px] animate__animated animate__fadeInRight"
                     src="./img/img Slider top container/logo/logo6.png" alt="">
                 </div>
                 <!-- end logo -->
@@ -415,12 +420,12 @@
             </li>
           </ul>
 
-          <button type="button" class="slider-nav"></button>
-          <button type="button" class="slider-nav slider-nav-next"></button>
+          <button type="button" class="slider-nav z-20"></button>
+          <button type="button" class="slider-nav z-20 slider-nav-next"></button>
 
 
           <ul class="slider-indicators">
-            <li class="active" style=""></li>
+            <li class="active"></li>
             <li class=""></li>
             <li class=""></li>
             <li class=""></li>
@@ -436,7 +441,7 @@
       <!-- Content -->
       <div id="swiper" class="">
         <!-- Slider main container -->
-        <div class="swiper ">
+        <div class="swiper">
           <!-- Slider Header -->
           <div class="flex justify-between items-center py-6">
             <h4 class="text-white font-bold text-2xl">Best Sellers</h4>
@@ -466,183 +471,28 @@
             <!-- End Slider Arrows -->
           </div>
           <!-- End Slider Header -->
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" data-hash="slide1">
-              <img src="./img/img Slider main container/1.jpg" alt="Alan Wake 2" class=" slide_img_top">
-              <div class="text-white bg-[#27262618] m-2 space-y-4">
-                <a href="#" class="font-normal">Alan Wake 2</a>
-                <div class="slide_text  ">
-                  <a href="#" class="button_all"> -20%</a>
-                  <a href="#" class="line-through font-light">$45.49</a>
-                  <a href="#" class=" font-normal text-[14px]">$36.36</a>
-                </div>
-              </div>
-            </div>
+          <!-- Slider slides -->
 
-            <div class="swiper-slide" data-hash="slide2">
-              <img src="./img/img Slider main container/2.jpg" alt="Cyberpunk 2077" class="slide_img_top">
-              <div class="text-white bg-[#27262618] m-2 space-y-4">
-                <a href="#" class="font-normal">Cyberpunk 2077</a>
-                <div class="slide_text  ">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                  <a href="#" class=" font-normal text-[14px]">$29.99</a>
-                </div>
-              </div>
-            </div>
 
-            <div class="swiper-slide" data-hash="slide3">
-              <img src="./img/img Slider main container/3.jpg" alt="Good of War" class="slide_img_top">
-              <div class="text-white bg-[#27262618] m-2 space-y-4">
-                <a href="#" class="font-normal">Good of War</a>
-                <div class="slide_text  ">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a href="#" class="line-through font-light text-[14px]">$49.99</a>
-                  <a href="#" class=" font-normal text-[14px]">$24.99</a>
-                </div>
-              </div>
-            </div>
 
-            <div class="swiper-slide" data-hash="slide4">
-              <img src="./img/img Slider main container/4.jpg" alt="Hogwarts Legacy" class="slide_img_top">
-              <div class="text-white bg-[#27262618] m-2 space-y-4">
-                <a href="#" class="font-normal">Hogwarts Legacy</a>
-                <div class="slide_text  ">
-                  <a href="#" class="button_all">-40%</a>
-                  <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                  <a href="#" class=" font-normal text-[14px]">$35.99</a>
-                </div>
-              </div>
-            </div>
 
-            <div class="swiper-slide" data-hash="slide5">
-              <img src="./img/img Slider main container/5.jpg" alt="Lords of the Fallen" class="slide_img_top">
-              <div class="text-white bg-[#27262618] m-2 space-y-4">
-                <a href="#" class="font-normal">Lords of the Fallen</a>
-                <div class="slide_text  ">
-                  <a href="#" class="button_all"> -35%</a>
-                  <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                  <a href="#" class=" font-normal text-[14px]">$38.99</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" data-hash="slide6">
-              <img src="./img/img Slider main container/6.jpg" alt="Alan Wake Remastered" class="slide_img_top">
-              <div class="text-white bg-[#27262618] m-2 space-y-4">
-                <a href="#" class="font-normal">Alan Wake Remastered</a>
-                <div class="slide_text  ">
-                  <a href="#" class="button_all"> -67%</a>
-                  <a href="#" class="line-through font-light text-[14px]">$13.99</a>
-                  <a href="#" class=" font-norma text-[14px]l">$4.61</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" data-hash="slide7">
-              <img src="./img/img Slider main container/7.jpg" alt="Grand Theft Auto V: Premium Edition"
-                class="slide_img_top ">
-              <div class="text-white bg-[#27262618] m-2 space-y-4">
-                <a href="#" class="font-normal">Grand Theft Auto V</a>
-                <div class="slide_text  ">
-                  <a href="#" class="button_all"> -67%</a>
-                  <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                  <a href="#" class=" font-normal text-[14px]">$19.79</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" data-hash="slide8">
-              <img src="./img/img Slider main container/8.jpg" alt="Red Dead Redemption 2" class="slide_img_top  ">
-              <div class="text-white bg-[#27262618] m-2 space-y-4">
-                <a href="#" class="font-normal">Red Dead Redemption 2</a>
-                <div class="slide_text  ">
-                  <a href="#" class="button_all"> -67%</a>
-                  <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                  <a href="#" class=" font-normal text-[14px]">$19.79</a>
-                </div>
-              </div>
-            </div>
-            ...
+          <div id="middle-swiper" class="swiper-wrapper">
           </div>
         </div>
       </div>
 
       <div class="space-y-16">
-        <div class="flex items-center gap-7">
+        <div class="flex gap-7">
           <!-- Top Sellers -->
-          <div id="Top Sellers">
+          <div id="Top-Sellers">
             <div class="pt-24 space-y-2">
               <div class="text-white flex items-center justify-between pb-10">
                 <h1 class="text-2xl ">Top Sellers</h1>
-                <a class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300  "
-                  href="#">VIEW MORE</a>
+                <a class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300"
+                  href="/html/top-sellers.html">VIEW MORE</a>
               </div>
               <!-- box Top Sellers -->
-              <div class="flex items-center hover_TopSellers ">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/2.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/8.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Red Dead Redemption 2</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-67%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">
-                      $19.79</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/9.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/4.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/1.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
+              <div id="top-sellers-box">
               </div>
               <!-- end box Top Sellers -->
             </div>
@@ -654,1263 +504,217 @@
               <div class="text-white flex items-center justify-between pb-10">
                 <h1 class="text-2xl ">Most Played</h1>
                 <a class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300"
-                  href="#">VIEW MORE</a>
+                  href="/html/most-played.html">VIEW MORE</a>
               </div>
-              <!-- box Top Sellers -->
-              <div class="flex items-center hover_TopSellers ">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/1 .jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
+              <!-- box Most Played -->
+              <div id="most-played">
+
               </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/3.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Red Dead Redemption 2</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-67%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">
-                      $19.79</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/2.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/4.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/5.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <!-- end box Top Sellers -->
+              <!-- end box Most Played -->
             </div>
           </div>
-          <!-- Coming Soon -->
-          <div id=" Coming Soon">
-            <div class="pt-24 h space-y-2 flex flex-col">
+          <!-- Trending -->
+          <div id="Trending">
+            <div class="pt-24 space-y-2 flex flex-col">
               <div class="text-white flex items-center justify-between pb-7">
-                <h1 class="text-2xl">Coming Soon</h1>
+                <h1 class="text-2xl">Trending</h1>
                 <div> <a
                     class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300"
-                    href="#">VIEW MORE</a></div>
+                    href="html/Trending.html">VIEW MORE</a></div>
               </div>
-              <!-- box Top Sellers -->
-              <div class="flex items-center hover_TopSellers ">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/1.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <a class="text-box" href="#">Available 08/20/24</a>
-                  <a href="#">$59.99</a>
-                  <div class="flex items-center gap-2">
-                  </div>
-                </div>
+              <!-- box Coming Soon -->
+              <div id="trending">
+
               </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/5.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Red Dead Redemption 2</a>
-                  <a class="text-box" href="#">Available 03/08/24</a>
-                  <div class="flex items-center gap-2">
-                    <a class="text-[14px]" href="#">$49.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/2.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/7.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <a class="text-box" href="#">Available 07/06/24</a>
-                  <div class="flex items-center gap-2">
-                    <a class="text-[13px]" href="#">$39.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/4.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <!-- end box Top Sellers -->
+              <!-- end box Coming Soon -->
             </div>
           </div>
-          <!-- END Coming Soon -->
+          <!-- END Trending -->
         </div>
+
         <!-- Most Popular -->
-        <div id="Most Popular" class="">
-          <div class="text-white">
-            <h1 class="pb-10 text-2xl">Most Popular</h1>
+        <div id="Most-popular" class="">
+          <div class="text-white pb-10 flex items-center justify-between">
+            <h1 class=" text-2xl">Most Popular</h1>
+            <div> <a
+                class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300"
+                href="html/most-popular.html">VIEW MORE</a></div>
           </div>
-          <div class="flex flex-row gap-5 ">
-            <div class="img">
-              <img class="hover_MostPopular" src="./img/img Most Popular/1.jpg" alt="" width="210px">
-              <div class="text-white pt-3  ">
-                <a class="" href="#">Crash Bandicoot 4</a>
-                <div class="pt-3 space-x-3 slide_text ">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a class="line-through text-[14px] font-light" href="#">$39.99</a>
-                  <a class="font-normal text-[14px]" href="#">$19.99</a>
-                </div>
-              </div>
-            </div>
-            <div class="img">
-              <img class="hover_MostPopular" src="./img/img Most Popular/3.jpg" alt="" width="210px">
-              <div class="text-white pt-3">
-                <a class="" href="#">Crash Bandicoot 4</a>
-                <div class="pt-3 space-x-3 slide_text">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a class="line-through text-[14px] font-light" href="#">$39.99</a>
-                  <a class="font-normal text-[14px]" href="#">$19.99</a>
-                </div>
-              </div>
-            </div>
-            <div class="img">
-              <img class="hover_MostPopular" src="./img/img Most Popular/2.jpg" alt="" width="210px">
-              <div class="text-white pt-3">
-                <a class="" href="#">Crash Bandicoot 4</a>
-                <div class="pt-3 space-x-3 slide_text">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a class="line-through text-[14px] font-light" href="#">$39.99</a>
-                  <a class="font-normal text-[14px]" href="#">$19.99</a>
-                </div>
-              </div>
-            </div>
-            <div class="img">
-              <img class="hover_MostPopular" src="./img/img Most Popular/4.jpg" alt="" width="210px">
-              <div class="text-white pt-3">
-                <a class="" href="#">Crash Bandicoot 4</a>
-                <div class="pt-3 space-x-3 slide_text">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a class="line-through text-[14px] font-light" href="#">$39.99</a>
-                  <a class="font-normal text-[14px]" href="#">$19.99</a>
-                </div>
-              </div>
-            </div>
-            <div class="img">
-              <img class="hover_MostPopular" src="./img/img Most Popular/5.jpg" alt="" width="210px">
-              <div class="text-white pt-3">
-                <a class="" href="#">Crash Bandicoot 4</a>
-                <div class="pt-3 space-x-3 slide_text">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a class="line-through text-[14px] font-light" href="#">$39.99</a>
-                  <a class="font-normal text-[14px]" href="#">$19.99</a>
-                </div>
-              </div>
-            </div>
+          <div id="most-popular" class="flex flex-row">
           </div>
         </div>
         <!-- END Most Popular -->
+
         <!-- Free Game -->
         <div id="Free Game">
-          <div class="text-white">
+          <div class="text-white flex items-center justify-between">
             <h1 class="text-xl">Free Game</h1>
+            <div> <a
+                class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300"
+                href="html/free-game.html">VIEW MORE</a></div>
           </div>
-          <div class="flex flex-row gap-10  ">
-            <div class="pt-10 ">
-              <img class="Free_Game" src="./img/img free game/1.jpg" alt="" width="353px">
-              <div class="text-white space-y-2 pt-3">
-                <div>
-                  <a class="text-free " href="#">BASE GAME</a>
-                </div>
-                <a href="#">PUBG: BATTLEGROUNDS</a>
-                <div>
-                  <a href="#">Free</a>
-                </div>
+        </div>
+        <div class="flex flex-row gap-5">
+          <div class="pt-10 ">
+            <img class="Free_Game" src="./img/img free game/1.jpg" alt="" width="400px">
+            <div class="text-white space-y-2 pt-3">
+              <div>
+                <a class="text-free " href="#">BASE GAME</a>
               </div>
-            </div>
-
-            <div class="pt-10">
-              <img class="Free_Game" src="./img/img free game/3.jpg" alt="" width="353px">
-              <div class="text-white space-y-2 pt-3">
-                <div>
-                  <a class="text-free " href="#">BASE GAME</a>
-                </div>
-                <a href="#">VALORANT</a>
-                <div>
-                  <a href="#">Free</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="pt-10">
-              <img class="Free_Game" src="./img/img free game/2.jpg" alt="" width="353px">
-              <div class="text-white space-y-2 pt-3">
-                <div>
-                  <a class="text-free " href="#">BASE GAME</a>
-                </div>
-                <a href="#">Warframe</a>
-                <div>
-                  <a href="#">Free</a>
-                </div>
+              <a href="#">PUBG: BATTLEGROUNDS</a>
+              <div>
+                <a href="#">Free</a>
               </div>
             </div>
           </div>
-          <div class=" flex flex-row gap-10 ">
-            <div class="pt-10">
-              <img class="Free_Game2" src="./img/img free game/4.jpg" alt="" width="353px">
-              <div class="text-white space-y-2 pt-3">
-                <div>
-                  <a class="text-free " href="#">BASE GAME</a>
-                </div>
-                <a href="#">THE FINALS</a>
-                <div>
-                  <a href="#">Free</a>
-                </div>
+
+          <div class="pt-10">
+            <img class="Free_Game" src="./img/img free game/3.jpg" alt="" width="390px">
+            <div class="text-white space-y-2 pt-3">
+              <div>
+                <a class="text-free " href="#">BASE GAME</a>
+              </div>
+              <a href="#">VALORANT</a>
+              <div>
+                <a href="#">Free</a>
               </div>
             </div>
+          </div>
 
-            <div class="pt-10">
-              <img class="Free_Game2" src="./img/img free game/5.jpg" alt="" width="353px">
-              <div class="text-white space-y-2 pt-3">
-                <div>
-                  <a class="text-free " href="#">BASE GAME</a>
-                </div>
-                <a href="#">Fall Guys</a>
-                <div>
-                  <a href="#">Free</a>
-                </div>
+          <div class="pt-10">
+            <img class="Free_Game" src="./img/img free game/2.jpg" alt="" width="390px">
+            <div class="text-white space-y-2 pt-3">
+              <div>
+                <a class="text-free " href="#">BASE GAME</a>
               </div>
-            </div>
-
-            <div class="pt-10">
-              <img class="Free_Game2" src="./img/img free game/6.jpg" alt="" width="353px">
-              <div class="text-white space-y-2 pt-3">
-                <div>
-                  <a class="text-free " href="#">BASE GAME</a>
-                </div>
-                <a href="#">Farlight 84</a>
-                <div>
-                  <a href="#">Free</a>
-                </div>
+              <a href="#">Warframe</a>
+              <div>
+                <a href="#">Free</a>
               </div>
             </div>
           </div>
         </div>
-        <!-- end Free Game -->
-
-        <!-- Now on the store -->
-        <div id="swiper" class="">
-          <!-- Slider main container -->
-          <div class="swiper ">
-            <!-- Slider Header -->
-            <div class="flex justify-between items-center py-6">
-              <h4 class="text-white  text-2xl">Now on the store</h4>
-              <!-- Slider Arrows -->
-              <div class="flex items-center gap-2">
-                <!-- Prev Arrow -->
-                <div class="custom-button-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="slide_arrow">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                  </svg>
-                </div>
-                <!-- End Prev Arrow -->
-
-                <!-- Next Arrow -->
-                <div class="custom-button-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="slide_arrow">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                  </svg>
-                </div>
-                <!-- End Next Arrow -->
-
+        <div class=" flex flex-row gap-5 ">
+          <div class="pt-10">
+            <img class="Free_Game2" src="./img/img free game/4.jpg" alt="" width="390px">
+            <div class="text-white space-y-2 pt-3">
+              <div>
+                <a class="text-free " href="#">BASE GAME</a>
               </div>
-              <!-- End Slider Arrows -->
-            </div>
-            <!-- End Slider Header -->
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" data-hash="slide1">
-                <img src="./img/img Slider main container/1.jpg" alt="Alan Wake 2" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Alan Wake 2</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -20%</a>
-                    <a href="#" class="line-through font-light">$45.49</a>
-                    <a href="#" class=" font-normal text-[14px]">$36.36</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide2">
-                <img src="./img/img Slider main container/2.jpg" alt="Cyberpunk 2077" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Cyberpunk 2077</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -50%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$29.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide3">
-                <img src="./img/img Slider main container/3.jpg" alt="Good of War" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Good of War</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -50%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$49.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$24.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide4">
-                <img src="./img/img Slider main container/4.jpg" alt="Hogwarts Legacy" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Hogwarts Legacy</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all">-40%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$35.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide5">
-                <img src="./img/img Slider main container/5.jpg" alt="Lords of the Fallen" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Lords of the Fallen</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -35%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$38.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide6">
-                <img src="./img/img Slider main container/6.jpg" alt="Alan Wake Remastered" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Alan Wake Remastered</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -67%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$13.99</a>
-                    <a href="#" class=" font-norma text-[14px]l">$4.61</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide7">
-                <img src="./img/img Slider main container/7.jpg" alt="Grand Theft Auto V: Premium Edition"
-                  class="slide_img_top ">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Grand Theft Auto V</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -67%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$19.79</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide" data-hash="slide8">
-                <img src="./img/img Slider main container/8.jpg" alt="Red Dead Redemption 2" class="slide_img_top  ">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Red Dead Redemption 2</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -67%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$19.79</a>
-                  </div>
-                </div>
-              </div>
-              ...
-            </div>
-          </div>
-        </div>
-        <!--end Now on the store  -->
-        <!-- Recently Updated-->
-        <div id="Most Popular" class="">
-          <div class="text-white">
-            <h1 class="pb-10 text-2xl">Most Popular</h1>
-          </div>
-          <div class="flex flex-row gap-5 ">
-            <div class="img">
-              <img class="hover_MostPopular" src="./img/img Most Popular/1.jpg" alt="" width="210px">
-              <div class="text-white pt-3  ">
-                <a class="" href="#">Crash Bandicoot 4</a>
-                <div class="pt-3 space-x-3 slide_text ">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a class="line-through text-[14px] font-light" href="#">$39.99</a>
-                  <a class="font-normal text-[14px]" href="#">$19.99</a>
-                </div>
-              </div>
-            </div>
-            <div class="img">
-              <img class="hover_MostPopular" src="./img/img Most Popular/3.jpg" alt="" width="210px">
-              <div class="text-white pt-3">
-                <a class="" href="#">Crash Bandicoot 4</a>
-                <div class="pt-3 space-x-3 slide_text">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a class="line-through text-[14px] font-light" href="#">$39.99</a>
-                  <a class="font-normal text-[14px]" href="#">$19.99</a>
-                </div>
-              </div>
-            </div>
-            <div class="img">
-              <img class="hover_MostPopular" src="./img/img Most Popular/2.jpg" alt="" width="210px">
-              <div class="text-white pt-3">
-                <a class="" href="#">Crash Bandicoot 4</a>
-                <div class="pt-3 space-x-3 slide_text">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a class="line-through text-[14px] font-light" href="#">$39.99</a>
-                  <a class="font-normal text-[14px]" href="#">$19.99</a>
-                </div>
-              </div>
-            </div>
-            <div class="img">
-              <img class="hover_MostPopular" src="./img/img Most Popular/4.jpg" alt="" width="210px">
-              <div class="text-white pt-3">
-                <a class="" href="#">Crash Bandicoot 4</a>
-                <div class="pt-3 space-x-3 slide_text">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a class="line-through text-[14px] font-light" href="#">$39.99</a>
-                  <a class="font-normal text-[14px]" href="#">$19.99</a>
-                </div>
-              </div>
-            </div>
-            <div class="img">
-              <img class="hover_MostPopular" src="./img/img Most Popular/5.jpg" alt="" width="210px">
-              <div class="text-white pt-3">
-                <a class="" href="#">Crash Bandicoot 4</a>
-                <div class="pt-3 space-x-3 slide_text">
-                  <a href="#" class="button_all"> -50%</a>
-                  <a class="line-through text-[14px] font-light" href="#">$39.99</a>
-                  <a class="font-normal text-[14px]" href="#">$19.99</a>
-                </div>
+              <a href="#">THE FINALS</a>
+              <div>
+                <a href="#">Free</a>
               </div>
             </div>
           </div>
-        </div>
-        <!--end Recently Updated  -->
-        <!-- Recently Updated-->
-        <div id="swiper" class="">
-          <!-- Slider main container -->
-          <div class="swiper ">
-            <!-- Slider Header -->
-            <div class="flex justify-between items-center py-6">
-              <h4 class="text-white  text-2xl">Now on the store</h4>
-              <!-- Slider Arrows -->
-              <div class="flex items-center gap-2">
-                <!-- Prev Arrow -->
-                <div class="custom-button-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="slide_arrow">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                  </svg>
-                </div>
-                <!-- End Prev Arrow -->
 
-                <!-- Next Arrow -->
-                <div class="custom-button-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="slide_arrow">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                  </svg>
-                </div>
-                <!-- End Next Arrow -->
-
+          <div class="pt-10">
+            <img class="Free_Game2" src="./img/img free game/5.jpg" alt="" width="390px">
+            <div class="text-white space-y-2 pt-3">
+              <div>
+                <a class="text-free " href="#">BASE GAME</a>
               </div>
-              <!-- End Slider Arrows -->
-            </div>
-            <!-- End Slider Header -->
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" data-hash="slide1">
-                <img src="./img/img Slider main container/1.jpg" alt="Alan Wake 2" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Alan Wake 2</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -20%</a>
-                    <a href="#" class="line-through font-light">$45.49</a>
-                    <a href="#" class=" font-normal text-[14px]">$36.36</a>
-                  </div>
-                </div>
+              <a href="#">Fall Guys</a>
+              <div>
+                <a href="#">Free</a>
               </div>
-
-              <div class="swiper-slide" data-hash="slide2">
-                <img src="./img/img Slider main container/2.jpg" alt="Cyberpunk 2077" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Cyberpunk 2077</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -50%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$29.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide3">
-                <img src="./img/img Slider main container/3.jpg" alt="Good of War" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Good of War</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -50%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$49.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$24.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide4">
-                <img src="./img/img Slider main container/4.jpg" alt="Hogwarts Legacy" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Hogwarts Legacy</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all">-40%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$35.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide5">
-                <img src="./img/img Slider main container/5.jpg" alt="Lords of the Fallen" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Lords of the Fallen</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -35%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$38.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide6">
-                <img src="./img/img Slider main container/6.jpg" alt="Alan Wake Remastered" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Alan Wake Remastered</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -67%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$13.99</a>
-                    <a href="#" class=" font-norma text-[14px]l">$4.61</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide7">
-                <img src="./img/img Slider main container/7.jpg" alt="Grand Theft Auto V: Premium Edition"
-                  class="slide_img_top ">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Grand Theft Auto V</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -67%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$19.79</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide" data-hash="slide8">
-                <img src="./img/img Slider main container/8.jpg" alt="Red Dead Redemption 2" class="slide_img_top  ">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Red Dead Redemption 2</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -67%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$19.79</a>
-                  </div>
-                </div>
-              </div>
-              ...
             </div>
           </div>
-        </div>
-        <!--end Recently Updated  -->
-        <div class="flex items-center gap-7">
-          <!-- New Releases -->
-          <div id="New Releases ">
-            <div class="pt-10 space-y-2">
-              <div class="text-white flex items-center justify-between pb-10">
-                <h1 class="text-2xl ">Releases</h1>
-                <a class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300  "
-                  href="#">VIEW MORE</a>
+
+          <div class="pt-10">
+            <img class="Free_Game2" src="./img/img free game/6.jpg" alt="" width="390px">
+            <div class="text-white space-y-2 pt-3">
+              <div>
+                <a class="text-free " href="#">BASE GAME</a>
               </div>
-              <!-- box New Releases -->
-              <div class="flex items-center hover_TopSellers ">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/2.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
+              <a href="#">Farlight 84</a>
+              <div>
+                <a href="#">Free</a>
               </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/8.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Red Dead Redemption 2</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-67%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">
-                      $19.79</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/9.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/4.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/1.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <!-- end box Top Sellers -->
             </div>
           </div>
-          <!-- End Releases -->
-          <!-- Top Player Rated -->
-          <div id="Top Player Rated">
-            <div class="pt-10 space-y-2 flex flex-col">
-              <div class="text-white flex items-center justify-between pb-10">
-                <h1 class="text-2xl ">Top Player Rated</h1>
-                <a class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300"
-                  href="#">VIEW MORE</a>
-              </div>
-              <!-- box Top Sellers -->
-              <div class="flex items-center hover_TopSellers ">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/1 .jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/3.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Red Dead Redemption 2</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-67%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">
-                      $19.79</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/2.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/4.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/5.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <!-- end box Top Sellers -->
-            </div>
-          </div>
-          <!-- Coming Soon -->
-          <div id=" Coming Soon">
-            <div class="pt-10 space-y-2 flex flex-col">
-              <div class="text-white flex items-center justify-between pb-7">
-                <h1 class="text-2xl">Coming Soon</h1>
-                <div> <a
-                    class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300"
-                    href="#">VIEW MORE</a></div>
-              </div>
-              <!-- box Top Sellers -->
-              <div class="flex items-center hover_TopSellers ">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/1.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <a class="text-box" href="#">Available 08/20/24</a>
-                  <a href="#">$59.99</a>
-                  <div class="flex items-center gap-2">
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/5.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Red Dead Redemption 2</a>
-                  <a class="text-box" href="#">Available 03/08/24</a>
-                  <div class="flex items-center gap-2">
-                    <a class="text-[14px]" href="#">$49.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/2.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/7.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <a class="text-box" href="#">Available 07/06/24</a>
-                  <div class="flex items-center gap-2">
-                    <a class="text-[13px]" href="#">$39.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/4.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <!-- end box Top Sellers -->
-            </div>
-          </div>
-          <!-- END Coming Soon -->
-        </div>
-
-
-
-        <div id="swiper" class="">
-          <!-- Slider main container -->
-          <div class="swiper ">
-            <!-- Slider Header -->
-            <div class="flex justify-between items-center py-6">
-              <h4 class="text-white  text-2xl">Now on the store</h4>
-              <!-- Slider Arrows -->
-              <div class="flex items-center gap-2">
-                <!-- Prev Arrow -->
-                <div class="custom-button-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="slide_arrow">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                  </svg>
-                </div>
-                <!-- End Prev Arrow -->
-
-                <!-- Next Arrow -->
-                <div class="custom-button-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="slide_arrow">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                  </svg>
-                </div>
-                <!-- End Next Arrow -->
-
-              </div>
-              <!-- End Slider Arrows -->
-            </div>
-            <!-- End Slider Header -->
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" data-hash="slide1">
-                <img src="./img/img Slider main container/1.jpg" alt="Alan Wake 2" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Alan Wake 2</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -20%</a>
-                    <a href="#" class="line-through font-light">$45.49</a>
-                    <a href="#" class=" font-normal text-[14px]">$36.36</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide2">
-                <img src="./img/img Slider main container/2.jpg" alt="Cyberpunk 2077" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Cyberpunk 2077</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -50%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$29.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide3">
-                <img src="./img/img Slider main container/3.jpg" alt="Good of War" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Good of War</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -50%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$49.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$24.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide4">
-                <img src="./img/img Slider main container/4.jpg" alt="Hogwarts Legacy" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Hogwarts Legacy</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all">-40%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$35.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide5">
-                <img src="./img/img Slider main container/5.jpg" alt="Lords of the Fallen" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Lords of the Fallen</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -35%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$38.99</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide6">
-                <img src="./img/img Slider main container/6.jpg" alt="Alan Wake Remastered" class="slide_img_top">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Alan Wake Remastered</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -67%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$13.99</a>
-                    <a href="#" class=" font-norma text-[14px]l">$4.61</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide" data-hash="slide7">
-                <img src="./img/img Slider main container/7.jpg" alt="Grand Theft Auto V: Premium Edition"
-                  class="slide_img_top ">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Grand Theft Auto V</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -67%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$19.79</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide" data-hash="slide8">
-                <img src="./img/img Slider main container/8.jpg" alt="Red Dead Redemption 2" class="slide_img_top  ">
-                <div class="text-white bg-[#27262618] m-2 space-y-4">
-                  <a href="#" class="font-normal">Red Dead Redemption 2</a>
-                  <div class="slide_text  ">
-                    <a href="#" class="button_all"> -67%</a>
-                    <a href="#" class="line-through font-light text-[14px]">$59.99</a>
-                    <a href="#" class=" font-normal text-[14px]">$19.79</a>
-                  </div>
-                </div>
-              </div>
-              ...
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <div class="flex items-center gap-7">
-          <!-- Top Sellers -->
-          <div id="Top Sellers ">
-            <div class="pt-24 space-y-2">
-              <div class="text-white flex items-center justify-between pb-10">
-                <h1 class="text-2xl ">Top Sellers</h1>
-                <a class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300  "
-                  href="#">VIEW MORE</a>
-              </div>
-              <!-- box Top Sellers -->
-              <div class="flex items-center hover_TopSellers ">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/2.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/8.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Red Dead Redemption 2</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-67%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">
-                      $19.79</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/9.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/4.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Top Sellers/1.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <!-- end box Top Sellers -->
-            </div>
-          </div>
-          <!-- End Top Sellers -->
-          <!-- Most Played -->
-          <div id="Most Played">
-            <div class="pt-24 space-y-2 flex flex-col">
-              <div class="text-white flex items-center justify-between pb-10">
-                <h1 class="text-2xl ">Most Played</h1>
-                <a class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300"
-                  href="#">VIEW MORE</a>
-              </div>
-              <!-- box Top Sellers -->
-              <div class="flex items-center hover_TopSellers ">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/1 .jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/3.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Red Dead Redemption 2</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-67%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">
-                      $19.79</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/2.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/4.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Most Played/5.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <!-- end box Top Sellers -->
-            </div>
-          </div>
-          <!-- Coming Soon -->
-          <div id=" Coming Soon">
-            <div class="pt-24 space-y-2 flex flex-col">
-              <div class="text-white flex items-center justify-between pb-7">
-                <h1 class="text-2xl">Coming Soon</h1>
-                <div> <a
-                    class="border border-1 text-[12px] font-thin px-5 py-2 rounded-md hover:bg-[#3a393994] duration-300"
-                    href="#">VIEW MORE</a></div>
-              </div>
-              <!-- box Top Sellers -->
-              <div class="flex items-center hover_TopSellers ">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/1.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <a class="text-box" href="#">Available 08/20/24</a>
-                  <a href="#">$59.99</a>
-                  <div class="flex items-center gap-2">
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/5.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Red Dead Redemption 2</a>
-                  <a class="text-box" href="#">Available 03/08/24</a>
-                  <div class="flex items-center gap-2">
-                    <a class="text-[14px]" href="#">$49.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/2.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/7.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <a class="text-box" href="#">Available 07/06/24</a>
-                  <div class="flex items-center gap-2">
-                    <a class="text-[13px]" href="#">$39.99</a>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center hover_TopSellers">
-                <div class="">
-                  <img class="rounded-[4px]" src="./img/img Coming Soon/4.jpg" alt="" width="60px">
-                </div>
-                <div class="text-white flex flex-col gap-2 pl-4">
-                  <a class="Name-box" href="#">Cyberpunk 2077</a>
-                  <div class="flex items-center gap-2">
-                    <a class="button_all" href="#">-50%</a>
-                    <a class="price-box" href="#">$59.99</a>
-                    <a class="text-[13px]" href="#">$29.99</a>
-                  </div>
-                </div>
-              </div>
-              <!-- end box Top Sellers -->
-            </div>
-          </div>
-          <!-- END Coming Soon -->
         </div>
       </div>
+      <!-- end Free Game -->
 
-      <!-- End Content -->
+      <!-- Now on the store -->
+      <div id="swiper" class="">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Slider Header -->
+          <div class="flex justify-between items-center py-6">
+            <h4 class="text-white font-bold text-2xl">Now on the store</h4>
+            <!-- Slider Arrows -->
+            <div class="flex items-center gap-2">
+              <!-- Prev Arrow -->
+              <div class="custom-button-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="slide_arrow">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+              <!-- End Prev Arrow -->
+
+              <!-- Next Arrow -->
+              <div class="custom-button-next">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="slide_arrow">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+              <!-- End Next Arrow -->
+
+            </div>
+            <!-- End Slider Arrows -->
+          </div>
+          <!-- End Slider Header -->
+          <!-- Slider slides -->
+          <div id="Now-on-the-store-swiper" class="swiper-wrapper">
+          </div>
+        </div>
+      </div>
+      <!--end Now on the store  -->
+
+      <!-- Recently Updated-->
+
+      <!--end Recently Updated  -->
+
+      <!-- Recently Updated-->
+
+      <!--end Recently Updated  -->
+
+
+
+
+
+
+
+
     </div>
-    <!-- end body -->
+
+    <!-- End Content -->
+  </div>
+  <!-- end body -->
   </div>
   <!-- end container -->
 
 
   <!-- Scripts -->
-  <script src="interactions.js"></script>
-  <script src="/swipper.js" type="module"></script>
-  <script src="/swipper_top.js" type="module"></script>
+
+  <script type="module" src="./components/now-on-the-store.js"></script>
+  <script type="module" src="./components/most-popular.js"></script>
+  <script type="module" src="./components/Trending.js"></script>
+  <script type="module" src="./components/most-played-box.js"></script>
+  <script type="module" src="./components/topsellers.js"></script>
+  <script type="module" src="./components/swipper_top.js"></script>
+  <script type="module" src="./components/swipper.js"></script>
   <script src="./sidebar.js"></script>
+  <script src="./components/interactions.js"></script>
   <script type="module" src="animate.js"></script>
+
+
 </body>
 
 </html>
