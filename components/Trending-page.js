@@ -4,13 +4,13 @@ let games = document.querySelector("#Trending_page");
 
 let skeletons = document.createElement("div");
 skeletons.setAttribute("id", "top_skeletons")
-skeletons.classList.add(...["grid", "grid-cols-1", "md:grid-cols-3", "lg:grid-cols-5", "gap-5"]);
+skeletons.classList.add(...["grid", "grid-cols-2", "md:grid-cols-3", "lg:grid-cols-4", "gap-10", "md:gap-4", "lg:gap-10", "px-3"]);
 
 
 const generateSkeleton = () => {
     for (let index = 0; index < 40; index++) {
         skeletons.innerHTML += `<div class="">
-        <div class="w-[212px] h-[270px] rounded-lg" style="animation: pulse-bg 1s infinite;"></div>
+        <div class="w-[200px] h-[270px] rounded-lg md:w-[250px] md:h-[250px] lg:w-[270px] lg:h-[360px]" style="animation: pulse-bg 1s infinite;"></div>
         <div class="text-white mt-3 space-y-4">
             <span class="font-normal w-[50px] h-[7px] rounded-md style="animation: pulse-bg 1s infinite;""></span>
             <div class="flex flex-col gap-3">
@@ -34,7 +34,7 @@ setTimeout(() => {
 
     axios.get(url, {
         params: {
-            key: "ac0b0fc08aed42e99d286cf3e4d5e552",
+            key: "9f19b59eaa71485ba341f04700dbe158",
             page_size: 40,
             genres: "shooter",
             // ordering: "metacritic"
@@ -45,20 +45,19 @@ setTimeout(() => {
             dataobj.forEach((game, index) => {
                 games.innerHTML += generateGame(game)
             });
-            games.classList.add(...["grid", "grid-cols-1", "md:grid-cols-3", "lg:grid-cols-5", "gap-5"])
+            games.classList.add(...["grid", "grid-cols-2", "md:grid-cols-3", "lg:grid-cols-4", "gap-2", "md:gap-3", "lg:gap-3", "px-6"])
             games.removeChild(document.getElementById("top_skeletons"))
 
             console.log(dataobj);
         }).catch((err) => {
             console.log(err);
         });
-}, 3000);
+});
 
 
 const generatePrice = () => {
-    const price = Math.floor((Math.random() * 70) + 1);
-    return price > 35 ? price : 29;
-
+    const price = Math.floor((Math.random() * 70) + 1)
+    return price > 35 ? price : 74;
 }
 const generateGame = (game) => {
     return `
@@ -67,9 +66,9 @@ const generateGame = (game) => {
     <div class="text-white mt-3 space-y-4">
     <a href="#" class="font-normal">${game.name}</a>
     <div class="slide_text">
-    <a href="#" class="button_all"> -20%</a>
-    <a href="#" class="line-through font-light">$100</a>
-    <a href="#" class=" font-normal text-[14px]">$${generatePrice()}</a>
+    <a href="#" class="button_all Discount %">-${generatePrice()}%</a> 
+    <a href="#" class="line-through text-[14px] Discount- font-light">$${generatePrice()}</a>
+    <a class="text-[16px]" href="#">$${generatePrice()}</a>
     </div>
     </div>
     </div>

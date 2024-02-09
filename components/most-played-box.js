@@ -33,7 +33,7 @@ setTimeout(() => {
 
     axios.get(url, {
         params: {
-            key: "ac0b0fc08aed42e99d286cf3e4d5e552",
+            key: "9f19b59eaa71485ba341f04700dbe158",
             ordering: "playtime"
 
         }
@@ -62,9 +62,8 @@ setTimeout(() => {
 
 
 const generatePrice = () => {
-    const price = Math.floor((Math.random() * 70) + 1);
-    return price > 35 ? price : 29;
-
+    const price = Math.floor((Math.random() * 70) + 1)
+    return price > 35 ? price : 74;
 }
 const generateGame = (game) => {
     return `
@@ -73,9 +72,9 @@ const generateGame = (game) => {
     <div class="text-white flex flex-col gap-2 pl-4">
         <a class="Name-box" href="#">${game.name}</a>
         <div class="flex items-center gap-2">
-        <a class="button_all" href="#">-50%</a>
-        <a class="price-box" href="#">$59.99</a>
-        <a class="text-[13px]" href="#">$${generatePrice()}</a>
+        <a href="#" class="button_all Discount %">-${generatePrice()}%</a> 
+        <a href="#" class="line-through text-[14px] Discount- font-light">$${generatePrice()}</a>
+        <a class="text-[16px]" href="#">$${generatePrice()}</a>
         </div>
     </div>
     </div>

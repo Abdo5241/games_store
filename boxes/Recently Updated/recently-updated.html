@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./hint.css">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="/index.css">
+
+</head>
+
+<body class="bg-[#131313] overflow-x-hidden relative h-[10000px] " onclick="closeSideBar(event)">
+    <!-- container -->
+    <div class="w-full h-full ">
+        <!-- side nav -->
+        <div id="Sidebar-1">
+
+        </div>
+        <!-- end side nav -->
+        <!-- body -->
+        <!-- Header -->
+        <div id="Header">
+
+
+        </div>
+        <!-- End Header -->
+        <div class="w-full mx-auto lg:max-w-[1110px]">
+            <!-- recently-updated -->
+            <div id="recently-updated" class="">
+                <div class="text-white">
+                    <h1 class="pb-10 px-5" style="font-size: 35px;">Recently Updated</h1>
+                </div>
+                <div id="recently-updated-page">
+                </div>
+            </div>
+        </div>
+        <!-- END recently-updated -->
+
+    </div>
+    <!-- End Container -->
+    <!-- Scripts -->
+    <script src="/sidebar/Header.js"></script>
+    <script type="module" src="./recently-updated-page.js"></script>
+    <script src="/sidebar/sidebar-1.js"></script>
+    <script type="module" src="/animate.js"></script>
+</body>
+
+</html>

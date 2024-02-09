@@ -41,8 +41,8 @@ const swiper = new Swiper('.swiper', {
 
 axios.get(url, {
     params: {
-        key: "ac0b0fc08aed42e99d286cf3e4d5e552",
-        page_size: 15,
+        key: "9f19b59eaa71485ba341f04700dbe158",
+        page_size: 20,
         genres: "strategy",
         // ordering: "metacritic"
     }
@@ -60,9 +60,8 @@ axios.get(url, {
     });
 
 const generatePrice = () => {
-    const price = Math.floor((Math.random() * 70) + 1);
-    return price > 40 ? price : 29;
-
+    const price = Math.floor((Math.random() * 70) + 1)
+    return price > 35 ? price : 74;
 }
 const generateGame = (game) => {
     return `
@@ -71,9 +70,9 @@ const generateGame = (game) => {
     <div class="text-white mt-3 space-y-4">
         <a href="#" class="font-normal">${game.name}</a>
         <div class="slide_text">
-        <a href="#" class="button_all"> -20%</a>
-        <a href="#" class="line-through font-light">$100</a>
-        <a href="#" class=" font-normal text-[14px]">$${generatePrice()}</a>
+        <a href="#" class="button_all Discount %">-${generatePrice()}%</a> 
+        <a href="#" class="line-through text-[14px] Discount- font-light">$${generatePrice()}</a>
+        <a class="text-[16px]" href="#">$${generatePrice()}</a>
         </div>
     </div>
 </div>

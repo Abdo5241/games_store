@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="Home.css">
+    <title>Home</title>
+</head>
+
+<body class="bg-[#131315] overflow-x-hidden">
+
+
+    <div class="w-full h-full  space-y-20">
+
+        <!-- nav -->
+        <header
+            class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-white  text-sm py-4 bg-[#131315]">
+            <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+                aria-label="Global">
+                <div class="flex items-center justify-between">
+                    <a class="flex-none" href="#">
+                        <svg class="w-10 h-auto" width="100" height="100" viewBox="0 0 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="10" fill="black" />
+                            <path
+                                d="M37.656 68V31.6364H51.5764C54.2043 31.6364 56.3882 32.0507 58.1283 32.8793C59.8802 33.696 61.1882 34.8146 62.0523 36.2351C62.9282 37.6555 63.3662 39.2654 63.3662 41.0646C63.3662 42.5443 63.0821 43.8108 62.5139 44.8643C61.9458 45.906 61.1823 46.7524 60.2235 47.4034C59.2646 48.0544 58.1934 48.522 57.0097 48.8061V49.1612C58.2999 49.2322 59.5369 49.6288 60.7206 50.3509C61.9162 51.0611 62.8927 52.0672 63.6503 53.3693C64.4079 54.6714 64.7867 56.2457 64.7867 58.0923C64.7867 59.9744 64.3309 61.6671 63.4195 63.1705C62.508 64.6619 61.1349 65.8397 59.3002 66.7038C57.4654 67.5679 55.1572 68 52.3754 68H37.656ZM44.2433 62.4957H51.3279C53.719 62.4957 55.4413 62.04 56.4948 61.1286C57.5601 60.2053 58.0928 59.0215 58.0928 57.5774C58.0928 56.5002 57.8264 55.5296 57.2938 54.6655C56.7611 53.7895 56.0035 53.103 55.021 52.6058C54.0386 52.0968 52.8667 51.8423 51.5054 51.8423H44.2433V62.4957ZM44.2433 47.1016H50.7597C51.896 47.1016 52.92 46.8944 53.8314 46.4801C54.7429 46.054 55.459 45.4562 55.9798 44.6868C56.5125 43.9055 56.7789 42.9822 56.7789 41.9169C56.7789 40.5083 56.2817 39.3482 55.2874 38.4368C54.3049 37.5253 52.843 37.0696 50.9017 37.0696H44.2433V47.1016Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <div class="sm:hidden">
+                        <button type="button"
+                            class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                            data-hs-collapse="#navbar-image-1" aria-controls="navbar-image-1"
+                            aria-label="Toggle navigation">
+                            <svg class="hs-collapse-open:hidden flex-shrink-0 w-4 h-4"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="3" x2="21" y1="6" y2="6" />
+                                <line x1="3" x2="21" y1="12" y2="12" />
+                                <line x1="3" x2="21" y1="18" y2="18" />
+                            </svg>
+                            <svg class="hs-collapse-open:block hidden flex-shrink-0 w-4 h-4"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="navbar-image-1"
+                    class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+                    <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+                        <ul class="flex items-center pr-16 text-center gap-10">
+                            <li><a class="nav-links-home btn-home active " href="">Home</a></li>
+                            <li><a class="nav-links-home btn-home " href="#ABOUT-US">About Us</a></li>
+                            <li><a class="nav-links-home btn-home " href="">Hero</a></li>
+                            <li><a class="nav-links-home btn-home " href="#store">Store</a></li>
+                            <li><a class="nav-links-home btn-home " href="#faq">FAQ</a></li>
+
+                            <li><a class="Lgoin" href="/login/Login.html">Lgoin</a></li>
+                            <button class="join-Discord"><i class="pt-[2px] fa-brands fa-discord pr-1"></i>
+                                Discord</button>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end nav -->
+
+        <div class="w-full mx-auto lg:max-w-[1400px] ">
+            <div class="space-y-60">
+
+                <div
+                    class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between text-white md:px-0 px-6 pb-16 pt-20">
+
+                    <div class="md:w-1/2 flex flex-col justify-center space-y-5 py-10 text-center md:text-left ">
+                        <h1 class="text-4xl md:text-6xl font-bold leading-[50px]">Welcome to <span
+                                class="text-orange-500">M</span>
+                            Your
+                            UltimateGaming
+                            Destination</h1>
+
+                        <p class="text-sm md:text-base leading-loose">At M, we strive to provide the best possible
+                            gaming
+                            experience for all our customers. Our extensive collection of games, coupled with our
+                            commitment to customer satisfaction, ensures that you will find what you are looking for.
+                            Our benefits include:</p>
+                    </div>
+
+                    <div id="container-1" class="relative grid grid-cols-2 gap-1 pb-32 ml-40 md:ml-0 hidden lg:flex ">
+                        <div class="layer">
+                            <img class="w-[200px]  rounded-2xl" src="/img/img Top Sellers/1.jpg" alt="">
+                        </div>
+
+                        <div class="layer">
+                            <img class="w-[160px]  absolute ml-[5px] mt-[120px] rounded-2xl"
+                                src="/img/img Top Sellers/2.jpg" alt="">
+                        </div>
+
+                        <div class="layer">
+                            <img class="w-[190px]  absolute ml-[-110px] mt-[-95px]  rounded-2xl"
+                                src="/img/img Top Sellers/4.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Number -->
+                <section class="Numbers">
+                    <div
+                        class="mx-auto container  grid grid-cols-2 gap-8 px-6 md:gap-8 md:grid-cols-2 md:px-6 lg:grid-cols-4">
+
+                        <div class="box-Number">
+                            <div class="nums flex items-center">
+                                <span class="num text-3xl font-semibold" data-goal="350"></span>
+                                <h1 class="text-3xl font-semibold">K</h1>
+                            </div>
+                            <h1 class="text-xl pt-2">Games</h1>
+                        </div>
+                        <div class="box-Number">
+                            <div class="nums flex items-center">
+                                <span class="num text-2xl font-semibold" data-goal="350"></span>
+                                <h1 class="text-xl font-semibold">K</h1>
+                            </div>
+                            <h1 class="text-xl pt-2">Games</h1>
+                        </div>
+                        <div class="box-Number">
+                            <div class="nums flex items-center">
+                                <span class="num text-2xl font-semibold" data-goal="350"></span>
+                                <h1 class="text-xl font-semibold">K</h1>
+                            </div>
+                            <h1 class="text-xl pt-2">Games</h1>
+                        </div>
+                        <div class="box-Number">
+                            <div class="nums flex items-center">
+                                <span class="num text-2xl font-semibold" data-goal="350"></span>
+                                <h1 class="text-xl font-semibold">K</h1>
+                            </div>
+                            <h1 class="text-xl pt-2">Games</h1>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- end Number -->
+                <section id="ABOUT-US" class="space-y-40">
+                    <!-- About -->
+                    <div class="text-white space-y-10 pt-32">
+                        <div class="flex items-center flex-col">
+                            <h1 class="ABOUT-US">ABOUT US</h1>
+                        </div>
+
+                        <div class="container-ABOUT-US">
+                            <div class="card">
+                                <!-- cover image -->
+                                <div class="wrapper">
+                                    <img class="cover-image" src="/img/img ABOUT US/01-Trunks.png" alt="">
+                                </div>
+
+                                <!-- logo -->
+                                <img class="logo" src="/img/img ABOUT US/dbz-logo.png" alt="">
+
+                                <!-- Character image  -->
+                                <img class="character" src="/img/img ABOUT US/02-Trunks.png" alt="">
+
+                            </div>
+                            <div
+                                class="w-[470px]  py-4  md:w-[550px]  bg-[#252527] rounded-lg  border border-[#434344]">
+                                <p class="text-[#d5d5d5] text-center leading-[32px] md:px-4 px-4">M
+                                    is your
+                                    one-stop-shop for all
+                                    your
+                                    gaming
+                                    needs.
+                                    We offer
+                                    an extensive
+                                    collection of
+                                    games for all platforms, including PC, Xbox, PlayStation, and Nintendo. Our
+                                    selection of
+                                    games is carefully curated to ensure that you have access to the latest and most
+                                    popular
+                                    titles, all conveniently located in one place. Join us in exploring new worlds and
+                                    challenging your skills with our vast collection of games.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end About -->
+                    <!-- timeline -->
+                    <div class="timeline">
+                        <!-- left-container -->
+                        <div class="container_timeline  left-container">
+                            <div class="text-box">
+                                <span class="text-box-span hidden md:block">1</span>
+                                <h2 class="text-xl text-orange-500">M</h2>
+                                <p class="text-[#d0d0d0] text-base leading-7 ">
+                                    Wide Selection of Games
+                                    Our collection of games includes all the latest releases, as well as classic titles,
+                                    ensuring that you have access to the best games for all platforms.
+
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end left-container -->
+                        <!-- right-container -->
+                        <div class="container_timeline  right-container ">
+                            <div class="text-box text-box-right-2">
+                                <span class="text-box-span hidden md:block">2</span>
+                                <h2 class="text-xl text-orange-500">M</h2>
+
+                                <p class="text-[#d0d0d0] text-base leading-7  ">
+                                    Competitive Prices
+                                    We offer the best prices on all our games, ensuring that you get the best value for
+                                    your
+                                    money.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end right-container -->
+                        <!-- left-container -->
+                        <div class="container_timeline  left-container">
+                            <div class="text-box">
+                                <span class="text-box-span hidden md:block">3</span>
+                                <h2 class="text-xl text-orange-500">M</h2>
+                                <p class="text-[#d0d0d0] text-base leading-7  ">
+                                    Fast and Convenient Delivery
+                                    Our delivery service is fast and convenient, ensuring that you receive your games in
+                                    a
+                                    timely manner.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end left-container -->
+                        <!-- right-container -->
+                        <div class="container_timeline  right-container">
+                            <div class="text-box text-box-right-2">
+                                <span class="text-box-span hidden md:block">4</span>
+                                <h2 class="text-xl text-orange-500">M</h2>
+                                <p class="text-[#d0d0d0] text-base leading-7 ">
+                                    Excellent Customer Service
+                                    Our team of experts is dedicated to providing excellent customer service, ensuring
+                                    that
+                                    all your questions and concerns are addressed promptly.
+
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end right-container -->
+                    </div>
+                    <!-- end  timeline -->
+                </section>
+            </div>
+            <!-- Customers -->
+            <section class="pt-32">
+                <div class="mx-auto text-center space-y-20 text-white">
+                    <div class="flex justify-center">
+                        <h1 class="Customers">Our Customers speak for us</h1>
+                    </div>
+
+                    <div
+                        class="flex flex-col  px-3 space-y-5 md:justify-center md:px-0 md:flex-row  md:space-x-5 md:space-y-0">
+
+                        <div
+                            class="md:w-1/4 bg-[#252527] flex flex-col items-center py-4 px-8 space-y-3 rounded-lg border border-[#434344]">
+                            <img class="w-[70px] bg-[#3b3b3f]  rounded-full" src="/img/Customers/1.png" alt="">
+                            <h3 class="font-bold">Courtney Henry</h3>
+                            <p class="text-[#d5d5d5] text-base leading-7"> have They .M. at shopping llove
+                                and ,games of selection best the
+                                nbeatable. are prices their</p>
+                        </div>
+                        <div
+                            class="md:w-1/4 bg-[#252527] flex flex-col items-center py-4 px-8 space-y-3 rounded-lg border border-[#434344]">
+                            <img class="w-[70px] bg-[#3b3b3f]  rounded-full" src="/img/Customers/2.png" alt="">
+                            <h3 class="font-bold">LUIS ADRIAN</h3>
+                            <p class="text-[#d5d5d5] text-base leading-7"> M has everything I need for my
+                                gaming needs. I can always find the
+                                latest titles at competitive prices. </p>
+                        </div>
+                        <div
+                            class="md:w-1/4 bg-[#252527] flex flex-col items-center py-4 px-8 space-y-3 rounded-lg border border-[#434344]">
+                            <img class="w-[70px] bg-[#3b3b3f]  rounded-full" src="/img/Customers/3.png" alt="">
+                            <h3 class="font-bold">MARIA ANNA</h3>
+                            <p class="text-[#d5d5d5] text-base leading-7"> "M has excellent customer service.
+                                They are always ready to help and
+                                answer any questions I have. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+        </div>
+        <div>
+
+        </div>
+        </section>
+        <!-- end Customers -->
+    </div>
+
+
+
+
+    <!-- slides -->
+    <section id="store">
+        <div class="space-y-10 pt-32">
+            <div class="flex items-center flex-col">
+                <h1 class="Our-Collections">Our Collections</h1>
+            </div>
+
+            <!-- swiper-home-1 -->
+            <div id="" class="flex">
+                <!-- Slider main container -->
+                <div class="swiper">
+
+                    <!-- Slider slides -->
+                    <div id="swiper-home-1" class="swiper-wrapper" style=" transition-timing-function: linear;">
+                    </div>
+                </div>
+            </div>
+            <!-- end  swiper-home-1 -->
+            <!-- swiper-home-2 -->
+            <div id="" class="flex">
+                <!-- Slider main container -->
+                <div class="swiper">
+
+                    <!-- Slider slides -->
+                    <div id="swiper-home-2" class="swiper-wrapper" style=" transition-timing-function: linear;">
+                    </div>
+                </div>
+            </div>
+            <!-- end  swiper-home-2 -->
+            <div class="flex justify-center ">
+                <a class="go-to-store" href="/index.html">GO TO
+                    STORE <span class="ml-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class=" w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </span></a>
+            </div>
+        </div>
+    </section>
+    <!-- end slides -->
+    <!-- FAQ -->
+    <section id="faq">
+        <div id="" class="space-y-20 pt-32 pb-10   w-full mx-auto lg:max-w-[1400px] text-white ">
+            <div class="flex items-center flex-col">
+                <h1 class="text-center text-3xl font-[600] pb-5  border-b-4 border-[#EF6838]">Frequently
+                    Asked
+                    Questions
+                </h1>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <div class="accordion">
+                    <div class="question">
+                        <span class="text-white text-lg font-[500] pb-3 ">What is</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-accordion duration-500 text-white w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div class="answer ">
+                        <li>Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,</li>
+                        <li>sunt aliqua put a bird on it squid single-origin coffee nulla assumenda</li>
+                        <li>shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson</li>
+                        <li>cred nesciunt sapiente ea proident.</li>
+                        <li>shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson</li>
+                        <li>cred nesciunt sapiente ea proident.</li>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="question">
+                        <span class="text-white text-lg font-[500] pb-3 ">What is</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-accordion duration-500 text-white w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div class="answer ">
+                        <li>Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,</li>
+                        <li>sunt aliqua put a bird on it squid single-origin coffee nulla assumenda</li>
+                        <li>shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson</li>
+                        <li>cred nesciunt sapiente ea proident.</li>
+                        <li>shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson</li>
+                        <li>cred nesciunt sapiente ea proident.</li>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="question">
+                        <span class="text-white text-lg font-[500] pb-3 ">What is</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-accordion duration-500 text-white w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div class="answer ">
+                        <li>Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,</li>
+                        <li>sunt aliqua put a bird on it squid single-origin coffee nulla assumenda</li>
+                        <li>shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson</li>
+                        <li>cred nesciunt sapiente ea proident.</li>
+                        <li>shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson</li>
+                        <li>cred nesciunt sapiente ea proident.</li>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="question">
+                        <span class="text-white text-lg font-[500] pb-3 ">What is</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-accordion duration-500 text-white w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div class="answer ">
+                        <li>Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,</li>
+                        <li>sunt aliqua put a bird on it squid single-origin coffee nulla assumenda</li>
+                        <li>shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson</li>
+                        <li>cred nesciunt sapiente ea proident.</li>
+                        <li>shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson</li>
+                        <li>cred nesciunt sapiente ea proident.</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- END FAQ -->
+
+    <div class=" flex justify-center">
+        <div class="join-container">
+            <i class="text-5xl fa-brands fa-discord"></i>
+            <h1 class="font-[600] text-3xl">Join Our Community</h1>
+            <button class="join-button">Join Discord</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="text-white grid grid-rows-1  justify-center space-y-20 pt-16">
+            <ul class="flex items-center gap-5">
+                <!-- discord -->
+                <li><a class=" text-2xl py-3 px-[14px]  duration-[400ms] bg-[#5965F1] hover:bg-[#6a75f0]   rounded-full"
+                        href=""><i class="fa-brands fa-discord"></i></a></li>
+                <!-- end discord -->
+                <!-- facebook -->
+                <li><a class=" text-2xl py-3 px-[14px]  duration-[400ms] bg-[#0B66FF] hover:bg-[#568ded]   rounded-full"
+                        href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <!-- end facebook -->
+                <!-- Twitter -->
+                <li><a class=" text-2xl py-3 px-[14px]  duration-[400ms] bg-[#1FA0F1] hover:bg-[#6bc1f7]   rounded-full"
+                        href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <!-- end Twitter -->
+                <!-- instagram -->
+                <li><a class=" text-2xl py-3 px-[14px]  duration-[400ms] bg-[#6D45C2] hover:bg-[#855ddc]   rounded-full"
+                        href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <!-- end instagram -->
+                <!-- telegram -->
+                <li><a class=" text-2xl py-3 px-[14px] duration-[400ms] bg-[#3995c3] hover:bg-[#0aadff]  rounded-full"
+                        href=""><i class="fa-brands fa-telegram"></i></a>
+                    <!-- end telegram -->
+                </li>
+            </ul>
+
+            <p class="flex justify-center">Copyright © 2022 .<span onclick="openModalM()"
+                    class="text-[#EF6838] cursor-pointer">M</span>.
+                All Rights
+                Reserved.
+            </p>
+            <ul class="relative flex items-center justify-center gap-7 pb-16">
+                <li class="footer-links" onclick="openModalSecurity()">Security</li>
+                <li class="footer-links" onclick="openModalSecurity()">Terms</li>
+                <li class="footer-links" onclick="openModalSecurity()">Privacy</li>
+            </ul>
+        </div>
+
+
+        <!-- modal 1 -->
+        <div id="modal" onclick="closeModalDody()" class="" style="display: none;">
+            <div onclick="event.stopPropagation()" class="content space-y-7 animate__animated animate__fadeInDown ">
+                <div class="flex justify-between border-b border-[#cdcdcdbe] pb-3">
+                    <h1 class="text-2xl font-[600]">Security</h1>
+                    <svg onclick="closeModalSvg()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="  Remove-from-cart w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                </div>
+                <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.</p>
+                <li>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim
+                </li>
+                <li>Quidam lisque persius interesset his et, Lisque persius interesset his et, in quot quidam
+                    persequeris vim, ad mea essent possim
+                </li>
+                <li>In quot quidam persequeris vim, ad mea essent possim Quidam lisque persius interesset
+                    his et.
+                </li>
+                <li>Quidam lisque persius interesset his et, Lisque persius interesset his et.
+                </li>
+                <li>Interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea
+                    essent possim
+                </li>
+                <li>Persius interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad
+                    mea essent possim
+                </li>
+                <li>Quot quidam persequeris vim Quidam lisque persius interesset his et, Lisque persius interesset
+                    his et, in quot quidam persequeris
+                </li>
+            </div>
+        </div>
+
+        <!-- modal 2 -->
+        <div id="modal2" onclick="closeModalMDody()" class="flex justify-center" style="display: none;">
+            <div onclick="event.stopPropagation()" class="content space-y-7 animate__animated animate__fadeInDown ">
+                <div class="flex justify-between border-b border-[#cdcdcdbe] pb-3">
+                    <h1 class="text-2xl font-[600]">M</h1>
+                    <svg onclick="closeModalMSvg()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="  Remove-from-cart w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                </div>
+                <li>Thank you for choosing M as your gaming destination. Follow us on social media to stay updated
+                    on the latest games and deals.</li>
+
+            </div>
+        </div>
+
+        <!-- modal 3  -->
+        <div id="modal" onclick="closeModalDody()" class="" style="display: none;">
+            <div onclick="event.stopPropagation()" class="content space-y-7 animate__animated animate__fadeInDown ">
+                <div class="flex justify-between border-b border-[#cdcdcdbe] pb-3">
+                    <h1 class="text-2xl font-[600]">Security</h1>
+                    <svg onclick="closeModalSvg()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="  Remove-from-cart w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                </div>
+                <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.</p>
+                <li>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim
+                </li>
+                <li>Quidam lisque persius interesset his et, Lisque persius interesset his et, in quot quidam
+                    persequeris vim, ad mea essent possim
+                </li>
+                <li>In quot quidam persequeris vim, ad mea essent possim Quidam lisque persius interesset
+                    his et.
+                </li>
+                <li>Quidam lisque persius interesset his et, Lisque persius interesset his et.
+                </li>
+                <li>Interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea
+                    essent possim
+                </li>
+                <li>Persius interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad
+                    mea essent possim
+                </li>
+                <li>Quot quidam persequeris vim Quidam lisque persius interesset his et, Lisque persius interesset
+                    his et, in quot quidam persequeris
+                </li>
+            </div>
+        </div>
+
+        <!-- modal 4 -->
+        <div id="modal" onclick="closeModalDody()" class="" style="display: none;">
+            <div onclick="event.stopPropagation()" class="content space-y-7 animate__animated animate__fadeInDown ">
+                <div class="flex justify-between border-b border-[#cdcdcdbe] pb-3">
+                    <h1 class="text-2xl font-[600]">Security</h1>
+                    <svg onclick="closeModalSvg()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="  Remove-from-cart w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+
+                </div>
+                <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.</p>
+                <li>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim
+                </li>
+                <li>Quidam lisque persius interesset his et, Lisque persius interesset his et, in quot quidam
+                    persequeris vim, ad mea essent possim
+                </li>
+                <li>In quot quidam persequeris vim, ad mea essent possim Quidam lisque persius interesset
+                    his et.
+                </li>
+                <li>Quidam lisque persius interesset his et, Lisque persius interesset his et.
+                </li>
+                <li>Interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea
+                    essent possim
+                </li>
+                <li>Persius interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad
+                    mea essent possim
+                </li>
+                <li>Quot quidam persequeris vim Quidam lisque persius interesset his et, Lisque persius interesset
+                    his et, in quot quidam persequeris
+                </li>
+            </div>
+        </div>
+
+    </footer>
+    <!--end footer -->
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+    <script type="module" src="/animate.js"></script>
+    <script type="module" src="slides-js/swiper-home-1.js"></script>
+    <script type="module" src="slides-js/swiper-home-2.js"></script>
+
+</body>
+
+</html>
