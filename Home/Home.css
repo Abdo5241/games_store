@@ -145,13 +145,13 @@ nav {
 
 }
 
-nav ul li .active {
+nav a.active {
     color: #EF6838;
     text-decoration-line: underline;
     text-underline-offset: 10px;
 }
 
-nav ul li:hover {
+nav a:hover {
     color: #EF6838;
 
 }

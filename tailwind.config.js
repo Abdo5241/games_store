@@ -16,10 +16,13 @@ export default {
     "./sidebar/*.js",
     "./free-games/*.html",
     "./free-games/*.js",
+    'node_modules/preline/dist/*.js',
 
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('preline/plugin'),
+  ],
 }

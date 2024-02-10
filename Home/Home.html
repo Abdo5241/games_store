@@ -19,12 +19,12 @@
 
         <!-- nav -->
         <header
-            class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-white  text-sm py-4 bg-[#131315]">
+            class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-[#131315] text-white text-sm py-4 ">
             <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
                 aria-label="Global">
                 <div class="flex items-center justify-between">
                     <a class="flex-none" href="#">
-                        <h1 class="text-xl">Cyber Arcade <span class="text-orange-500 text-3xl">ツ</span></h1>
+                        <h1 class="text-xl">Cyber Arcade <span class="text-orange-500 text-2xl">ツ</span></h1>
                     </a>
                     <div class="sm:hidden">
                         <button type="button"
@@ -50,20 +50,16 @@
                     </div>
                 </div>
                 <div id="navbar-image-1"
-                    class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+                    class="hs-collapse hidden overflow-hidden transition-all duration-[400ms]  basis-full grow sm:block">
                     <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                        <ul class="flex items-center pr-16 text-center gap-10">
-                            <li><a class="nav-links-home btn-home active " href="">Home</a></li>
-                            <li><a class="nav-links-home btn-home " href="#ABOUT-US">About Us</a></li>
-                            <li><a class="nav-links-home btn-home " href="">Hero</a></li>
-                            <li><a class="nav-links-home btn-home " href="#store">Store</a></li>
-                            <li><a class="nav-links-home btn-home " href="#faq">FAQ</a></li>
-
-                            <li><a class="Lgoin" href="/login/Login.html">Lgoin</a></li>
-                            <button class="join-Discord"><i class="pt-[2px] fa-brands fa-discord pr-1"></i>
-                                Discord</button>
-
-                        </ul>
+                        <a class="nav-links-home btn-home active " href="">Home</a>
+                        <a class="nav-links-home btn-home " href="#ABOUT-US">About Us</a>
+                        <a class="nav-links-home btn-home " href="">Hero</a>
+                        <a class="nav-links-home btn-home " href="#store">Store</a>
+                        <a class="nav-links-home btn-home " href="#faq">FAQ</a>
+                        <a class="Lgoin" href="/login/Login.html">Lgoin</a></li>
+                        <button class="join-Discord items-center"><i class="pt-[2px] fa-brands fa-discord pr-1"></i>
+                            Discord</button>
                     </div>
                 </div>
             </nav>
@@ -300,6 +296,7 @@
 
 
 
+
     <!-- slides -->
     <section id="store">
         <div class="space-y-10 pt-32">
@@ -466,6 +463,7 @@
     <script type="module" src="/animate.js"></script>
     <script type="module" src="slides-js/swiper-home-1.js"></script>
     <script type="module" src="slides-js/swiper-home-2.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
 
 </body>
 

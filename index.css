@@ -212,10 +212,13 @@ html {
     padding: 11px 14px;
 }
 
-.active {
+/* .active_sidbar {
     width: 165px;
     background-color: #1A1A1D;
-}
+} */
+
+
+
 
 @layer components {
     .logo {
@@ -407,7 +410,7 @@ html {
 
 @layer components {
     .Lgoin {
-        @apply bg-[#EF6838] font-[500] duration-[300ms] hover:bg-[#c06b44] text-white py-3 px-10 rounded-full drop-shadow-2xl flex items-center
+        @apply bg-[#EF6838] font-[500] duration-[300ms] hover:bg-[#c06b44] hover:text-white text-white py-3 px-10 rounded-full drop-shadow-2xl flex items-center
     }
 }
 

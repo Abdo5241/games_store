@@ -18,6 +18,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "axios": "^1.6.5",
+    "preline": "^2.0.3",
     "sweetalert2": "^11.10.4",
     "swiffy-slider": "^1.6.0",
     "swiper": "^11.0.5",
