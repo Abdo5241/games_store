@@ -6,7 +6,7 @@ setTimeout(() => {
 
     axios.get(url, {
         params: {
-            key: "aec0d80757cb4366ae1386c23481f86b",
+            key: "612070ac113041ea814773b5a589e9f3",
             ordering: "playtime"
 
         }
@@ -37,8 +37,8 @@ setTimeout(() => {
 const generateGame = (game) => {
     return `
     <div>
-                                <img class="w-[400px]" src="${game._pk}" alt="">
-                                <h1>${game.pk}</h1>
+        <img class="w-[400px]" src="${game._pk}" alt="">
+        <h1>${game.pk}</h1>
                             </div>
     
     `

@@ -2,13 +2,13 @@ let ImgTop = document.querySelector("#container-1")
 let container = document.querySelector("#container-1");
 let layers = document.querySelectorAll(".layer");
 // img
-let modalM = document.querySelector("#modal2")
-let modal = document.querySelector("#modal")
+
 let header = document.querySelector("header")
 
 let nums = document.querySelectorAll(".nums .num")
 let section = document.querySelector("Numbers")
 const accordion = document.querySelectorAll(".accordion")
+
 
 // img
 document.querySelector("body").addEventListener("mousemove", (Event) => {
@@ -91,6 +91,7 @@ accordion.forEach(accordion => {
 });
 // end faq
 
+// footer
 
 
 
@@ -102,28 +103,6 @@ accordion.forEach(accordion => {
 
 //     `
 // }
-// modal.innerHTML = generateModal(modalM)
-
-function closeModalMDody() {
-    modal2.style.display = "none"
-}
-function closeModalMSvg() {
-    modal2.style.display = "none"
-}
-function openModalM() {
-    modal2.style.display = "flex"
-}
-
-function closeModalDody() {
-    modal.style.display = "none"
-}
-function closeModalSvg() {
-    modal.style.display = "none"
-}
-function openModalSecurity() {
-    modal.style.display = "flex"
-}
-// end modal footer
 
 
 

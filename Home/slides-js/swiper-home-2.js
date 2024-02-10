@@ -44,7 +44,7 @@ const swiper = new Swiper('.swiper', {
 
 axios.get(url, {
     params: {
-        key: "aec0d80757cb4366ae1386c23481f86b",
+        key: "612070ac113041ea814773b5a589e9f3",
         page_size: 40,
         genres: "fighting",
         // ordering: "metacritic"

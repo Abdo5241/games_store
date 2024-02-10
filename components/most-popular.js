@@ -4,13 +4,13 @@ let games = document.querySelector("#most-popular");
 
 let skeletons = document.createElement("div")
 skeletons.setAttribute("id", "most-popular-skeletons")
-skeletons.classList.add("flex")
+skeletons.classList.add(...["grid", "grid-cols-2", "md:grid-cols-3", "lg:grid-cols-5", "gap-10", "md:gap-5", "lg:gap-2"])
 
 const generateSkeleton = () => {
     for (let index = 0; index < 5; index++) {
         skeletons.innerHTML += `
-        <div class="mx-2">
-        <div class="w-[212px] h-[270px] rounded-lg" style="animation: pulse-bg 1s infinite;"></div>
+        <div class="mx-1">
+        <div class="w-[200px] h-[270px] rounded-lg lg:w-[210px]" style="animation: pulse-bg 1s infinite;"></div>
         <div class="text-white mt-3 space-y-4">
             <span class="font-normal w-[50px] h-[7px] rounded-md style="animation: pulse-bg 1s infinite;""></span>
             <div class="flex flex-col gap-3">
@@ -32,7 +32,7 @@ games.appendChild(generateSkeleton());
 
 axios.get(url, {
     params: {
-        key: "9f19b59eaa71485ba341f04700dbe158",
+        key: "612070ac113041ea814773b5a589e9f3",
         page_size: 5,
         genres: "massively-multiplayer",
         // ordering: "metacritic"
@@ -44,12 +44,13 @@ axios.get(url, {
         dataobj.forEach((game, index) => {
             games.innerHTML += generateGame(game)
         });
+        games.classList.add(...["grid", "grid-cols-2", "md:grid-cols-3", "lg:grid-cols-5", "gap-2", "md:gap-3", "lg:gap-3",])
         games.removeChild(document.getElementById("most-popular-skeletons"))
 
         console.log(dataobj);
     }).catch((err) => {
         console.log(err);
-    });
+    }, 30000);
 
 const generatePrice = () => {
     const price = Math.floor((Math.random() * 70) + 1)
@@ -58,7 +59,7 @@ const generatePrice = () => {
 const generateGame = (game) => {
     return `
     <div class="img">
-    <img class="hover_MostPopular  slide_img_top" src="${game.background_image}" alt="" ">
+    <img class="slide_img_bottom" src="${game.background_image}" alt="" ">
     <div class="text-white pt-3">
         <a class="" href="#">${game.name}</a>
         <div class="pt-3 space-x-[6px] slide_text ">

@@ -12,7 +12,7 @@ skeletons.classList.add("flex", "flex-col")
 const generateSkeleton = () => {
     for (let index = 0; index < 5; index++) {
         skeletons.innerHTML += `<div class="flex items-center hover_TopSellers">
-    <div class="rounded-[4px] w-[90px] h-[63px]" style="animation: pulse-bg 1s infinite;"></div>
+    <div class="rounded-[4px] w-[150px] h-[100px] md:w-[180px] md:h-[110px] lg:w-[100px] lg:h-[70px]" style="animation: pulse-bg 1s infinite;"></div>
     <div class="text-white flex flex-col gap-2 pl-4">
         <span class="Name-box w-[100px] h-[10px] rounded-full" style="animation: pulse-bg 1s infinite;"></span>
         <div class="flex items-center gap-2">
@@ -35,7 +35,7 @@ setTimeout(() => {
 
     axios.get(url, {
         params: {
-            key: "9f19b59eaa71485ba341f04700dbe158",
+            key: "612070ac113041ea814773b5a589e9f3",
             page_size: 5,
             // ordering: "added",
             genres: "family"
@@ -55,7 +55,7 @@ setTimeout(() => {
         }).catch((err) => {
             console.log(err);
         });
-}, 3000)
+},)
 
 
 const generatePrice = () => {
@@ -65,12 +65,12 @@ const generatePrice = () => {
 const generateGame = (game) => {
     return `
     <div class="flex items-center  hover_TopSellers">
-    <img class="rounded-[4px] w-[90px] h-[65px]" src="${game.background_image}" alt="" ">
+    <img class="slide_img_box " src="${game.background_image}" alt="" ">
     <div class="text-white flex flex-col gap-2 pl-4">
         <a class="Name-box" href="#">${game.name}</a>
         <div class="flex items-center gap-2">
         <a href="#" class="button_all Discount %">-${generatePrice()}%</a> 
-        <a href="#" class="line-through text-[14px] Discount- font-light">$${generatePrice()}</a>
+        <a href="#" class="line-through text-[14px]">$${generatePrice()}</a>
         <a class="text-[16px]" href="#">$${generatePrice()}</a>
         </div>
     </div>

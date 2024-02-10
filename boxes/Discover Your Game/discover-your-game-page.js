@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "https://api.rawg.io/api/games?key=9f19b59eaa71485ba341f04700dbe158&&page_size=40"
+const url = "https://api.rawg.io/api/games?key=612070ac113041ea814773b5a589e9f3&&page_size=40"
 let games = document.querySelector("#discover-your-game_page");
 
 let skeletons = document.createElement("div");

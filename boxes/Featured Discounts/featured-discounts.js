@@ -6,12 +6,12 @@ let games = document.querySelector("#featured-discounts");
 
 let skeletons = document.createElement("div");
 skeletons.setAttribute("id", "featured-discounts-skeletons")
-skeletons.classList.add("flex", "flex-row")
+skeletons.classList.add("flex", "mx-auto", "flex-col", "lg:flex-row", "gap-2")
 
 const generateSkeleton = () => {
     for (let index = 0; index < 3; index++) {
-        skeletons.innerHTML += `<div class="mx-2 ">
-        <div class="w-[360px] h-[200px] rounded-lg" style="animation: pulse-bg 1s infinite;"></div>
+        skeletons.innerHTML += `<div class="pt-5">
+        <div class="w-[450px] h-[200px] md:w-[700px] md:h-[220px] lg:w-[360px] lg:h-[210px] rounded-lg " style="animation: pulse-bg 1s infinite;"></div>
         <div class="text-white mt-3 space-y-4">
             <span class="font-normal w-[50px] h-[7px] rounded-md style="animation: pulse-bg 1s infinite;""></span>
             <div class="flex flex-col gap-3">
@@ -35,7 +35,7 @@ setTimeout(() => {
 
     axios.get(url, {
         params: {
-            key: "9f19b59eaa71485ba341f04700dbe158",
+            key: "612070ac113041ea814773b5a589e9f3",
             page_size: 3,
             ordering: "action",
             genres: "board-games"
@@ -73,7 +73,7 @@ const generatePrice = () => {
 const generateGame = (game) => {
     return `
             <div class="pt-10">
-            <img class="Free_Game2" src="${game.background_image}" alt="" width="390px">
+            <img class="slide_img_Discounts " src="${game.background_image}" alt="">
             <div class="text-white space-y-2 pt-3">
             <div>
                 <a class="text-free " href="#">BASE GAME</a>

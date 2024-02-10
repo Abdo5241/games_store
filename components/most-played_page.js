@@ -35,7 +35,7 @@ setTimeout(() => {
 
     axios.get(url, {
         params: {
-            key: "9f19b59eaa71485ba341f04700dbe158",
+            key: "612070ac113041ea814773b5a589e9f3",
             page_size: 40,
             genres: "role-playing-games-rpg",
             // ordering: "metacritic"

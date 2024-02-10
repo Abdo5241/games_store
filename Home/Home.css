@@ -141,7 +141,7 @@ nav {
     transition: all ease-in-out 500ms;
     border-bottom: 1px solid #EF6838;
     background-color: #14181c;
-    z-index: 100000000000000;
+    z-index: 99999999999999999999999999999999999999999;
 
 }
 

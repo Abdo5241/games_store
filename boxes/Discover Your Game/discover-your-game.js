@@ -4,13 +4,12 @@ let games = document.querySelector("#discover-your-game");
 
 let skeletons = document.createElement("div")
 skeletons.setAttribute("id", "discover-your-game-skeletons")
-skeletons.classList.add(...["grid", "grid-cols-2", "md:grid-cols-5", "lg:grid-cols-5", "gap-10", "md:gap-10", "lg:gap-10",])
+skeletons.classList.add(...["grid", "grid-cols-2", "md:grid-cols-3", "lg:grid-cols-5", "gap-10", "md:gap-5", "lg:gap-2"])
 
 const generateSkeleton = () => {
     for (let index = 0; index < 5; index++) {
-        skeletons.innerHTML += `
-        <div class="mx-2">
-        <div class="w-[185px] h-[270px] rounded-lg md:w-[150px] md:h-[200px] lg:w-[270px] lg:h-[320px]" style="animation: pulse-bg 1s infinite;"></div>
+        skeletons.innerHTML += `<div class="">
+        <div class="w-[200px] h-[270px] rounded-lg lg:w-[215px]" style="animation: pulse-bg 1s infinite;"></div>
         <div class="text-white mt-3 space-y-4">
             <span class="font-normal w-[50px] h-[7px] rounded-md style="animation: pulse-bg 1s infinite;""></span>
             <div class="flex flex-col gap-3">
@@ -22,8 +21,7 @@ const generateSkeleton = () => {
                 <span class=" font-normal text-[14px] w-[70px] h-[7px] rounded-s-full"style="animation: pulse-bg 1s infinite;"></span>
             </div>
         </div>
-        </div>
-        `
+        </div>`
     }
     return skeletons;
 }
@@ -33,7 +31,7 @@ setTimeout(() => {
 
     axios.get(url, {
         params: {
-            key: "9f19b59eaa71485ba341f04700dbe158",
+            key: "612070ac113041ea8s14773b5a589e9f3",
             page_size: 5,
             genres: "simulation",
             // ordering: "metacritic"

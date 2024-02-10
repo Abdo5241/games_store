@@ -1,5 +1,3 @@
-
-
 let sidebar = document.querySelector("#Sidebar-1")
 
 const generateSidebar = (sidebarElement) => {
@@ -106,7 +104,6 @@ sidebar.innerHTML = generateSidebar(sidebar)
 
 let btn2 = document.querySelector("#btn");
 let sidebar2 = document.querySelector(".sidebar");
-let modal = document.querySelector("#modal");
 let closed = true;
 let body_overlay = document.getElementById("body_overlay");
 

@@ -20,20 +20,30 @@ const swiper = new Swiper('.swiper', {
     },
     // Responsive breakpoints
     breakpoints: {
-        // when window width is >= 320px
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 10
-        },
+        // // when window width is >= 320px
+        // 320: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 10
+        // },
         // when window width is >= 480px
-        480: {
+        400: {
             slidesPerView: 2,
-            spaceBetween: 10
+            spaceBetween: 7
         },
         // when window width is >= 640px
         640: {
+            slidesPerView: 3,
+            spaceBetween: 8
+        },
+        // when window width is >= 768px
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        },
+        // when window width is >= 1024px
+        1024: {
             slidesPerView: 5,
-            spaceBetween: 15
+            spaceBetween: 10
         }
     }
 });
@@ -41,7 +51,7 @@ const swiper = new Swiper('.swiper', {
 
 axios.get(url, {
     params: {
-        key: "9f19b59eaa71485ba341f04700dbe158",
+        key: "612070ac113041ea814773b5a589e9f3",
         page_size: 20,
         genres: "strategy",
         // ordering: "metacritic"
@@ -66,7 +76,9 @@ const generatePrice = () => {
 const generateGame = (game) => {
     return `
     <div class="swiper-slide" data-hash="nowx-swiper-${game.id}">
-    <img src="${game.background_image}" alt="" class="slide_img_top">
+    <img src="${game.background_image}" alt="" class="slide_img_bottom">
+    <button  class="add-to-cart absolute text-[#ff6b27] mt-[-240px] ml-[155px] md:mt-[-235px] md:ml-[195px] lg:mt-[-265px] lg:ml-[185px]"><i class="fa fa-plus-circle" style="font-size:20px"></i>
+    </button>
     <div class="text-white mt-3 space-y-4">
         <a href="#" class="font-normal">${game.name}</a>
         <div class="slide_text">
