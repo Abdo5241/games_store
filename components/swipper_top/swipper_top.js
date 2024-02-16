@@ -1,9 +1,11 @@
+
+
 // import Swiffy Slider JS
 import { swiffyslider } from 'swiffy-slider'
 window.swiffyslider = swiffyslider;
 
 window.addEventListener("load", () => {
-    window.swiffyslider.init();
+  window.swiffyslider.init();
 });
 
 // import Swiffy Slider CSS
@@ -13,10 +15,10 @@ let Slider_top = document.querySelector("#Slider_top_container")
 
 
 const generateSlider = (Slider_topElement) => {
-    return `
+  return `
     <div
-    class="rounded-xl slider-indicators-highlight swiffy-slider slider-item-show2-sm slider-item-ratio slider-item-ratio-21x9 slider-item-snapstart slider-nav-arrow slider-nav-touch slider-nav-autohide slider-nav-page slider-nav-autoplay slider-nav-autopause slider-indicators-outside  slider-nav-animation slider-nav-animation-zoomout slider-item-helper"
-    data-slider-nav-autoplay-interval="50000">
+    class="rounded-xl slider-indicators-highlight swiffy-slider slider-item-show2-sm slider-item-ratio slider-item-ratio-21x9 slider-item-snapstart slider-nav-arrow slider-nav-touch slider-nav-autohide slider-nav-page slider-nav-autoplay slider-nav-autopause slider-indicators-outside  slider-nav-animation slider-nav-animation-zoomout slider-item-helper "
+    data-slider-nav-autoplay-interval="10000">
     <ul class="slider-container rounded-lg ">
       <li class="relative">
         <div id="slide1" class="">
@@ -245,6 +247,17 @@ const generateSlider = (Slider_topElement) => {
       <li class=""></li>
     </ul>
   </div>
+
+
+
+
+  
+
+
+
+
+
+
         
         `
 

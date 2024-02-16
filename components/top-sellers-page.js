@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "https://api.rawg.io/api/games?key=612070ac113041ea814773b5a589e9f3&&page_size=40"
+const url = "https://api.rawg.io/api/games?key=60afdc9c17194d88bc8b7b14c3e2690c&&page_size=40"
 let games = document.querySelector("#top_seller_page");
 
 let skeletons = document.createElement("div");
@@ -25,6 +25,7 @@ const generateSkeleton = () => {
     };
     return skeletons;
 }
+
 
 games.appendChild(generateSkeleton());
 
@@ -65,3 +66,6 @@ const generateGame = (game) => {
     </div>
     `
 };
+
+
+

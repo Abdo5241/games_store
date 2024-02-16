@@ -5,11 +5,17 @@ let layers = document.querySelectorAll(".layer");
 
 let header = document.querySelector("header")
 
-let nums = document.querySelectorAll(".nums .num")
-let section = document.querySelector("Numbers")
+
 const accordion = document.querySelectorAll(".accordion")
 
+const typed = new Typed(".auto-type", {
+    strings: ["Welcome to Cyber Arcade ツ", "Your Ultimate Gaming", "Destination"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+    loopCount: Infinity,
 
+})
 // img
 document.querySelector("body").addEventListener("mousemove", (Event) => {
     let x = Event.screenX / -25;
@@ -63,7 +69,19 @@ window.addEventListener("scroll", (e) => {
 //         nums.forEach((num) => startCount(num));
 //     }
 // };
+let nums = document.querySelectorAll(".nums .num")
+let section = document.querySelector(".Numbers")
+let started = false;
 
+
+window.onscroll = function () {
+    if (window.scrollY >= section.offsetTop) {
+        if (!started) {
+            nums.forEach((num) => startCount(num))
+        }
+        started = true
+    }
+}
 function startCount(el) {
     let goal = el.dataset.goal;
     let count = setInterval(() => {
@@ -71,9 +89,12 @@ function startCount(el) {
         if (el.textContent == goal) {
             clearInterval(count)
         }
-    },)
+    }, 2000 / goal)
 }
-startCount(document.querySelectorAll(".nums .num")[0])
+
+
+
+
 // end Numbers
 
 

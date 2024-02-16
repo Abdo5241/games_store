@@ -1,7 +1,7 @@
 let sidebar = document.querySelector("#Sidebar-1")
 
 const generateSidebar = (sidebarElement) => {
-    return ` <div class="sidebar bg-[#131315] text-white hidden lg:block "  onclick="event.stopPropagation()">
+    return ` <div class="sidebar bg-[#0F0F0F] text-white hidden lg:block "  onclick="event.stopPropagation()">
     <div class="logo_content ">
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

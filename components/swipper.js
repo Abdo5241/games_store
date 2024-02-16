@@ -1,7 +1,7 @@
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
 import axios from "axios";
-const url = "https://api.rawg.io/api/games?key=612070ac113041ea814773b5a589e9f3&&page_size=20"
+const url = "https://api.rawg.io/api/games?key=60afdc9c17194d88bc8b7b14c3e2690c&&page_size=20"
 import 'swiper/css/bundle';
 let games = document.querySelector("#middle-swiper");
 
@@ -91,14 +91,22 @@ const getGames = async () => {
 
 const generatePrice = () => {
     const price = Math.floor((Math.random() * 70) + 1)
-    return price > 35 ? price : 74;
+    return price > 50 ? price : 35;
+}
+const generatePricediscount = () => {
+    const price = Math.floor((Math.random() * 70) + 1)
+    return price > 21 ? price : 10;
+}
+const generatePricediscountTow = () => {
+    const price = Math.floor((Math.random() * 60) + 1)
+    return price > 45 ? price : 80;
 }
 
 
 
 const generateGame = (game) => {
     return `
-    <div class="swiper-slide" data-hash="middle-swiper-${game.id}" onclick="${getGame(game.id)}">
+    <div class="swiper-slide">
         <img src="${game.background_image}" alt="" class="slide_img_bottom">
         <button  class="add-to-cart absolute text-[#ff6b27] mt-[-240px] ml-[155px] md:mt-[-235px] md:ml-[195px] lg:mt-[-265px] lg:ml-[160px] xl:lg:mt-[-265px] xl:lg:ml-[185px]">
             <i class="fa fa-plus-circle" style="font-size:20px"></i>
@@ -106,8 +114,8 @@ const generateGame = (game) => {
         <div class="text-white mt-3 space-y-4">
             <a href="#" class="font-normal">${game.name}</a>
             <div class="slide_text">
-                <a href="#" class="button_all Discount %">-${generatePrice()}%</a> 
-                <a href="#" class="line-through text-[14px] Discount- font-light">$${generatePrice()}</a>
+                <a href="#" class="button_all Discount %">-${generatePricediscount()}%</a> 
+                <a href="#" class="line-through text-[14px] Discount- font-light">$${generatePricediscountTow()}</a>
                 <a class="text-[16px]" href="#">$${generatePrice()}</a>
             </div>
         </div>

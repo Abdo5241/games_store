@@ -35,9 +35,9 @@ setTimeout(() => {
 
     axios.get(url, {
         params: {
-            key: "612070ac113041ea814773b5a589e9f3",
+            key: "60afdc9c17194d88bc8b7b14c3e2690c",
             page_size: 40,
-            genres: "adventure",
+            genres: "platformer",
             // ordering: "metacritic"
         }
     })

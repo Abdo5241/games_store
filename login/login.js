@@ -9,6 +9,83 @@ let emailLogin = document.querySelector("#email-l");
 let passwordLogin = document.querySelector("#password-l");
 // login
 
+
+function SocialMedia() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 500000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+    Toast.fire({
+        title: "Custom width, padding, Animate.css, color, background,",
+        icon: "info",
+        title: "Sorry, it is not available now",
+        color: "#0B6EFD",
+        background: "#bdcfeb",
+        width: "370px",
+        showClass: {
+            popup: `
+                animate__animated
+                animate__fadeInRight
+                animate__faster
+            `
+        },
+        hideClass: {
+            popup: `
+                animate__animated
+                animate__fadeOutDown
+                animate__faster
+            `
+        }
+    });
+
+}
+
+
+function Password() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+    Toast.fire({
+        title: "Custom width, padding, Animate.css, color, background. ",
+        icon: "info",
+        title: "Sorry, it is not available now",
+        color: "#0B6EFD",
+        background: "#bdcfeb ",
+        width: "370px",
+        showClass: {
+            popup: `
+                animate__animated
+                animate__fadeInRight
+                animate__faster
+            `
+        },
+        hideClass: {
+            popup: `
+                animate__animated
+                animate__fadeOutDown
+                animate__faster
+            `
+        }
+    });
+
+}
+
+
 let db = JSON.parse(localStorage.getItem("db"));
 
 if (!db) {
@@ -59,7 +136,8 @@ document.forms[0].onsubmit = function (e) {
             icon: "info",
             title: "Type your username",
             color: "#0B6EFD",
-            background: "#bdcfeb",
+            background: "#c3d1e8",
+            width: "370px",
             showClass: {
                 popup: `
                     animate__animated
@@ -128,6 +206,7 @@ document.forms[0].onsubmit = function (e) {
             title: "Type your password",
             color: "#0B6EFD",
             background: "#bdcfeb ",
+            width: "370px",
             showClass: {
                 popup: `
                     animate__animated
@@ -161,8 +240,9 @@ document.forms[0].onsubmit = function (e) {
             icon: "success",
             title: "Your account has been created successfully",
             color: "#4ca305",
-            background: "#dbecdb ",
+            background: "#d9e4d9 ",
             showClass: {
+                width: "370px",
                 popup: `
                     animate__animated
                     animate__fadeInRight
@@ -229,7 +309,8 @@ async function login() {
             title: "Type your email",
             title: "Invalid password or email",
             color: "#FF0000",
-            background: "#e3bdbd",
+            width: "370px",
+            background: "#e3c4c4",
             showClass: {
                 popup: `
                     animate__animated
@@ -263,6 +344,7 @@ async function login() {
             title: "Invalid password or email",
             color: "#0B6EFD",
             background: "#bdcfeb",
+            width: "370px",
             showClass: {
                 popup: `
                     animate__animated
@@ -308,6 +390,7 @@ async function login() {
             title: "Invalid password or email",
             color: "#FF0000",
             background: "#e3bdbd ",
+            width: "370px",
             showClass: {
                 popup: `
                     animate__animated

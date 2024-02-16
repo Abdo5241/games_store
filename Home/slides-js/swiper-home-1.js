@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
         // when window width is >= 320px
         320: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 10
         },
         // when window width is >= 768px
@@ -42,7 +42,7 @@ const swiper = new Swiper('.swiper', {
 
 axios.get(url, {
     params: {
-        key: "612070ac113041ea814773b5a589e9f3",
+        key: "60afdc9c17194d88bc8b7b14c3e2690c",
         page_size: 40,
         genres: "action",
         // ordering: "metacritic" fighting
@@ -64,7 +64,7 @@ axios.get(url, {
 
 const generateGame = (game) => {
     return `
-        <div class="swiper-slide" style=" transition-timing-function: linear;" data-hash="swiper-home-1-${game.id}">
+        <div class="swiper-slide" style=" transition-timing-function: linear;">
         <img src="${game.background_image}" alt="" class="swiper-home-1">
     </div>
         `

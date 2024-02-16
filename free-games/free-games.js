@@ -6,12 +6,12 @@ let games = document.querySelector("#free-games");
 
 let skeletons = document.createElement("div");
 skeletons.setAttribute("id", "free-games_skeletons")
-skeletons.classList.add(...["grid", "mx-auto", "grid-cols-1", "md:grid-cols-2", "lg:grid-cols-3", "gap-10", "md:gap-3", "lg:gap-3", "xl:gap-5"])
+skeletons.classList.add(...["grid", "mx-auto", "grid-cols-1", "md:grid-cols-2", "lg:grid-cols-3", "gap-10", "md:gap-3", "lg:gap-3", "xl:gap-3"])
 
 const generateSkeleton = () => {
     for (let index = 0; index < 6; index++) {
         skeletons.innerHTML += `<div class="">
-        <div class="w-[380px] h-[200px] md:w-[350px] lg:w-[315px] xl:w-[355px] rounded-lg" style="animation: pulse-bg 1s infinite;"></div>
+        <div class="w-[380px] h-[200px] md:w-[350px] lg:w-[315px] xl:w-[345px] rounded-lg" style="animation: pulse-bg 1s infinite;"></div>
         <div class="text-white mt-3 space-y-4">
             <span class="font-normal w-[50px] h-[7px] rounded-md style="animation: pulse-bg 1s infinite;""></span>
             <div class="flex flex-col gap-3">
@@ -35,7 +35,7 @@ setTimeout(() => {
 
     axios.get(url, {
         params: {
-            key: "612070ac113041ea814773b5a589e9f3",
+            key: "60afdc9c17194d88bc8b7b14c3e2690c",
             genres: "platformer",
             page_size: 6,
         }

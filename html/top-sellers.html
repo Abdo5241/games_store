@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="bg-[#131313] overflow-x-hidden relative  " onclick="closeSideBar(event)">
+<body class="bg-[#0F0F0F] overflow-x-hidden relative  ">
     <!-- container -->
     <div class="w-full h-full ">
         <!-- side nav -->
@@ -24,12 +24,95 @@
         <!-- end side nav -->
         <!-- body -->
         <!-- Header -->
-        <div id="Header">
+        <header
+            class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-[#0f0f0f] text-white text-sm py-5 ">
+            <nav class="max-w-[90rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+                aria-label="Global">
+                <div class="flex items-center justify-between">
+                    <a class="flex-none" href="#">
+                        <h1 class="text-xl">Cyber Arcade <span class="text-orange-500 text-2xl">ツ</span></h1>
+                    </a>
+                    <div class="sm:hidden">
+                        <button type="button"
+                            class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                            data-hs-collapse="#navbar-image-1" aria-controls="navbar-image-1"
+                            aria-label="Toggle navigation">
+                            <svg class="hs-collapse-open:hidden flex-shrink-0 w-4 h-4"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="3" x2="21" y1="6" y2="6" />
+                                <line x1="3" x2="21" y1="12" y2="12" />
+                                <line x1="3" x2="21" y1="18" y2="18" />
+                            </svg>
+                            <svg class="hs-collapse-open:block hidden flex-shrink-0 w-4 h-4"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="navbar-image-1"
+                    class="hs-collapse hidden overflow-hidden transition-all duration-[600ms]  basis-full grow sm:block">
+                    <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
 
-        </div>
+                        <div>
+                            <input id="nav_toggle"
+                                class="cursor-pointer duration-[700ms] w-[105px]  hover:w-[280px] focus:w-[280px] md:hover:w-[160px] md:focus:w-[160px] lg:hover:w-[280px] lg:focus:w-[280px] hover:bg-[#1a1a1a]   relative text-white bg-[#1d1d1d] pl-10 p-5 rounded-full h-6 outline-0 focus:bg-[#222222]"
+                                type="text" placeholder="Search store">
+
+                            <label for="nav_toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class=" w-5 h-5 text-white absolute text-center ml-2 mt-[-30px] cursor-pointer ">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                            </label>
+                        </div>
+
+
+
+                        <a href="game-buy/game-buy.html"> <button
+                                class="bg-[#ff6b27] py-1 px-2 rounded-md transition hover:bg-orange-500 ">Get
+                                The App</button>
+                        </a>
+
+                        <a href="/login/Login.html"><button
+                                class="bg-[#ff6b27] py-1 px-6 rounded-md transition hover:bg-orange-500">Login</button>
+                        </a>
+
+
+                        <a class="hover-links2" href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=""
+                                style="width: 24px; height: 24px;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                            </svg>
+                        </a>
+
+                        <a class="hover-links2" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=""
+                                style="width: 24px; height: 24px;">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                            </svg></a>
+                        <!-- User -->
+                        <div>
+                            <img class="rounded-full" src="./img/u1.jpeg" alt="" width="40px">
+                        </div>
+                        <!-- END User -->
+
+                    </div>
+            </nav>
+        </header>
 
         <!-- End Header -->
         <div class="w-full mx-auto lg:max-w-[1100px]">
+
             <!-- Top Sellers -->
             <div id="Top Sellers" class="">
                 <div class="text-white">
@@ -53,7 +136,8 @@
     </div>
     <!-- End Container -->
     <!-- Scripts -->
-    <script src="/sidebar/Header.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
+    <script src="/sidebar/header.js"></script>
     <script src="/sidebar/footer.js"></script>
     <script type="module" src="/components/top-sellers-page.js"></script>
     <script src="/sidebar/sidebar-1.js"></script>

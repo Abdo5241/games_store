@@ -11,7 +11,7 @@ skeletons.classList.add("flex", "mx-auto", "flex-col", "lg:flex-row", "gap-2")
 const generateSkeleton = () => {
     for (let index = 0; index < 3; index++) {
         skeletons.innerHTML += `<div class="pt-5">
-        <div class="w-[450px] h-[200px] md:w-[700px] md:h-[220px] lg:w-[360px] lg:h-[210px] rounded-lg " style="animation: pulse-bg 1s infinite;"></div>
+        <div class="w-[450px] h-[200px] md:w-[700px] md:h-[220px] lg:w-[345px] lg:h-[210px] rounded-lg " style="animation: pulse-bg 1s infinite;"></div>
         <div class="text-white mt-3 space-y-4">
             <span class="font-normal w-[50px] h-[7px] rounded-md style="animation: pulse-bg 1s infinite;""></span>
             <div class="flex flex-col gap-3">
@@ -35,7 +35,7 @@ setTimeout(() => {
 
     axios.get(url, {
         params: {
-            key: "612070ac113041ea814773b5a589e9f3",
+            key: "60afdc9c17194d88bc8b7b14c3e2690c",
             page_size: 3,
             ordering: "action",
             genres: "board-games"

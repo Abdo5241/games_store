@@ -11,6 +11,11 @@ body::-webkit-scrollbar {
     width: 8px;
 }
 
+::selection {
+    color: #fff;
+    background: #FF6A27;
+}
+
 body::-webkit-scrollbar-track {
     background: #1d2228;
     border-radius: 35px;
@@ -19,7 +24,11 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: var(--sb-thumb-color);
     border-radius: 35px;
-    border: 13px solid #0B6EFD;
+    border: 13px solid #FF6A27;
+}
+
+.swal2-timer-progress-bar {
+    background: rgba(0, 0, 0, .4);
 }
 
 button {
@@ -27,7 +36,7 @@ button {
     color: #f08f6c;
     color: #bdcfeb;
     color: #ff0000;
-    color: #dbecdb;
+    color: #d9e4d9;
     color: #4ca305;
 }
 
